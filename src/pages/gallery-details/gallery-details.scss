@@ -1,0 +1,61 @@
+page-gallery-details {
+  font-family: 'Cairo', sans-serif !important;
+  background: url("../../assets/imgs/bg-home.jpg") no-repeat no-repeat top left !important;
+  background-size: cover !important;
+  height: 100vh !important;
+  ion-content {
+    background: transparent !important;
+
+
+
+    ion-row {
+      ion-col[col-12] {
+        ion-card {
+          height: 150px;
+          img{
+            height: 100%;
+          }
+        }
+      }
+      ion-col[col-6] {
+        ion-card {
+          height: 120px;
+          img {
+            height: 100%;
+          }
+        }
+      }
+      ion-col {
+        ion-card {
+          div.overlay{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: color($colors,overlay);
+            top: 0;
+            left: 0;
+          }
+          position: relative;
+          text-align: center;
+          border-radius: 15px !important;
+          img{
+            object-fit: cover !important;
+          }
+          .card-title {
+            padding-right: 6px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-size: 1.0em;
+            width: 100%;
+            font-weight: bold;
+            color: color($colors, light);
+            border-top-left-radius: 20px;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+
+}

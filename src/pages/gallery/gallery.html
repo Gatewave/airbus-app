@@ -18,59 +18,59 @@
 
 
 <ion-content>
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
     <ion-row>
-        <ion-col col-12 (click)="animateElem()" >
-            <ion-card>
-                <img #myElement src="../../assets/imgs/slide1.jpg"/>
+        <ion-col col-12>
+            <ion-card (click)="openIt()">
+                <div class="overlay"></div>
+                <img src="./../../assets/imgs/gallery_cover_1.jpg"/>
                 <div class="card-title">
-                        {{'gallery.photos.p1'| translate}}
+                    {{'gallery.photos.p1'| translate}}
                 </div>
             </ion-card>
         </ion-col>
 
-        <ion-col col-6 >
+        <ion-col col-6>
             <ion-card (click)="openIt()">
-                <img  src="../../assets/imgs/slide2.jpg"/>
+                <div class="overlay"></div>
+                <img src="./../../assets/imgs/gallery_cover_2.jpg"/>
                 <div class="card-title">
                     {{'gallery.photos.p2'| translate}}
                 </div>
             </ion-card>
         </ion-col>
 
-        <ion-col col-6 (click)="openIt()">
-            <ion-card>
-                <img  src="../../assets/imgs/slide3.jpg"/>
+        <ion-col col-6>
+            <ion-card (click)="openIt()">
+                <div class="overlay"></div>
+                <img src="./../../assets/imgs/gallery_cover_3.jpg"/>
                 <div class="card-title">
                     {{'gallery.photos.p3'| translate}}
                 </div>
             </ion-card>
         </ion-col>
-        <ion-col col-12 (click)="animation3.start({type: 'pulse', duration: '1000'})">
-            <ion-card>
-                <img  animates #animation3="animates" src="../../assets/imgs/slide4.jpg"/>
+        <ion-col col-12>
+            <ion-card (click)="openIt()">
+                <div class="overlay"></div>
+                <img src="./../../assets/imgs/gallery_cover_4.png"/>
                 <div class="card-title">
-                    {{'gallery.photos.p4'| translate}}
+                        {{'gallery.photos.p4'| translate}}
                 </div>
             </ion-card>
         </ion-col>
 
-        <ion-col col-6 (click)="animation4.start({type: 'pulse', duration: '1000'})">
-            <ion-card>
-                <img animates #animation4="animates"  src="../../assets/imgs/slide5.jpg"/>
+        <ion-col col-6>
+            <ion-card (click)="openIt()">
+                <div class="overlay"></div>
+                <img src="./../../assets/imgs/gallery_cover_5.jpg"/>
                 <div class="card-title">
                     {{'gallery.photos.p5'| translate}}
                 </div>
             </ion-card>
         </ion-col>
 
-        <ion-col col-6 (click)="animation5.start({type: 'pulse', duration: '1000'})">
-            <ion-card>
-                <img animates #animation5="animates" src="../../assets/imgs/slide1.jpg"/>
-                <div class="card-title">
-                    {{'gallery.photos.p6'| translate}}
-                </div>
-            </ion-card>
-        </ion-col>
     </ion-row>
 
 </ion-content>

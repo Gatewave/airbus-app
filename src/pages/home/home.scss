@@ -56,7 +56,7 @@ page-home {
             }
             ion-col[col-12] {
                 div[id="news"] {
-                    direction: rtl;
+                    $app-direction:multi;
                     margin-top: 35px !important;
 
                     p {

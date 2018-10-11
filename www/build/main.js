@@ -1,10 +1,10 @@
-webpackJsonp([19],{
+webpackJsonp([20],{
 
 /***/ 173:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutusPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CallPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(21);
@@ -21,38 +21,32 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the AboutusPage page.
+ * Generated class for the CallPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var AboutusPage = /** @class */ (function () {
-    function AboutusPage(navCtrl, navParams) {
+var CallPage = /** @class */ (function () {
+    function CallPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    AboutusPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad AboutusPage');
+    CallPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad CallPage');
     };
-    AboutusPage.prototype.doRefresh = function (refresher) {
-        console.log('Begin async operation', refresher);
-        setTimeout(function () {
-            refresher.complete();
-        }, 2000);
-    };
-    AboutusPage.prototype.backHome = function () {
+    CallPage.prototype.backHome = function () {
         this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_2__home_home__["a" /* HomePage */]);
     };
-    AboutusPage = __decorate([
+    CallPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-aboutus',template:/*ion-inline-start:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/aboutus/aboutus.html"*/'\n<ion-header>\n\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title text-center>aboutus</ion-title>\n\n    <ion-buttons start>\n      <button ion-button icon-only (click)="backHome()">\n        <ion-icon name="md-arrow-forward"></ion-icon>\n      </button>\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content >\n\n  <ion-refresher (ionRefresh)="doRefresh($event)">\n    <ion-refresher-content></ion-refresher-content>\n  </ion-refresher>\n\n  <ion-row>\n    <ion-col col-12>\n      <img src="../../assets/imgs/airbus.jpg" alt="air-bus">\n      <h5 padding>من نحن</h5>\n      <article padding>\n        تمثلت النظره الاستراتيجيه لشركه ايرباص منذ انشائها كشركة للسياحة عام 1988بوضع اسس تحلّت بالإصرار للصعود الى القمة والبقاء عليها لتحقيق رؤيتها المستقبلية، يحيط ذلك الفكر تقديم أرقي مستويات الخدمة بحضور الأمانة والمصداقية والإخلاص في العمل . جاهدين في ذلك لتجاوز حاجز التوقعات والسعي لخلق تاثيرملحوظ  ودور ريادي بالقطاع السياحي المصري .\n        ومن خلال الدعم والمتابعة المستمرة من إدارة الشركة بتولى فريق من الكفاءات لتحقيق الرؤية بإتباع وتطوير السياسات العلمية والعملية التي انبتت ثمار جهودهاعلي ارض الواقع لتصبح ايرباص للسياحه الشركه الاكثر انتشارا بمصر كائنا في اكثر من 14 فرع داخل و خارج مصر .\n      </article>\n    </ion-col>\n  </ion-row>\n</ion-content>\n'/*ion-inline-end:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/aboutus/aboutus.html"*/,
+            selector: 'page-call',template:/*ion-inline-start:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/call/call.html"*/'\n<ion-header>\n\n\n    <ion-navbar>\n      <button ion-button menuToggle >\n        <ion-icon name="menu"></ion-icon>\n      </button>\n\n    <ion-title text-center> {{ \'call.title\' | translate }} </ion-title>\n\n      <ion-buttons start>\n        <button ion-button icon-only (click)="backHome()">\n          <ion-icon name="md-arrow-forward"></ion-icon>\n        </button>\n      </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n  <google-map></google-map>\n  <ion-row>\n  <ion-col col-12>\n    <ion-card>\n      <ion-card-header> {{ \'call.address.title\' | translate }}  </ion-card-header>\n      <ion-card-content>\n        <ion-list>\n          <ion-item>\n            <h5> {{ \'call.address.add\' | translate }}  </h5>\n            <ion-icon name="ios-pin" color="danger"></ion-icon>\n            {{ \'call.address.location\' | translate }}\n          </ion-item>\n\n\n          <ion-item>\n            <h5>{{ \'call.contact-us.title\' | translate }}</h5>\n            <ion-icon name="ios-call" color="danger"></ion-icon>\n            {{ \'call.contact-us.number\' | translate }}\n          </ion-item>\n        </ion-list>\n      </ion-card-content>\n    </ion-card>\n\n    <ion-card>\n      <ion-card-header>{{ \'call.address.title\' | translate }} </ion-card-header>\n      <ion-card-content>\n        <ion-list>\n          <ion-item>\n            <h5> {{ \'call.address.add\' | translate }}  </h5>\n            <ion-icon name="ios-pin" color="danger"></ion-icon>\n            {{ \'call.address.location\' | translate }}\n          </ion-item>\n\n          <ion-item>\n            <h5>{{ \'call.contact-us.title\' | translate }}</h5>\n            <ion-icon name="ios-call" color="danger"></ion-icon>\n            {{ \'call.contact-us.number\' | translate }}\n\n          </ion-item>\n        </ion-list>\n      </ion-card-content>\n    </ion-card>\n\n  </ion-col>\n</ion-row>\n</ion-content>\n'/*ion-inline-end:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/call/call.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]])
-    ], AboutusPage);
-    return AboutusPage;
+    ], CallPage);
+    return CallPage;
 }());
 
-//# sourceMappingURL=aboutus.js.map
+//# sourceMappingURL=call.js.map
 
 /***/ }),
 
@@ -237,16 +231,17 @@ var PackageDetailsPage = /** @class */ (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Slides */]),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Slides */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Slides */]) === "function" && _a || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Slides */])
     ], PackageDetailsPage.prototype, "slides", void 0);
     PackageDetailsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'page-package-details',template:/*ion-inline-start:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/package-details/package-details.html"*/'<ion-header>\n\n  <ion-navbar>\n    <button ion-button menuToggle >\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title text-center>{{\'packageDetail.title\' | translate}}</ion-title>\n  </ion-navbar>\n\n  <ion-toolbar no-border-top>\n    <ion-segment  color="danger"  [(ngModel)]="reserve">\n      <ion-segment-button   value="partA">\n        {{\'packageDetail.tabs.1\'| translate}}\n      </ion-segment-button>\n      <ion-segment-button   value="partB">\n        {{\'packageDetail.tabs.2\'| translate}}\n      </ion-segment-button>\n      <ion-segment-button   value="partC">\n        {{\'packageDetail.tabs.3\'| translate}}\n      </ion-segment-button>\n    </ion-segment>\n  </ion-toolbar>\n  <div class="info_bar">\n    <p>\n      <span>{{\'packageDetail.trip.name\'| translate}}</span>\n      <span>{{\'packageDetail.trip.place\'| translate}}</span>\n      <span>{{\'packageDetail.trip.cost\'| translate}}</span>\n    </p>\n    <rating [(ngModel)]="rate" max="5" halfStarIconName="star-half" (ngModelChange)="onModelChange($event)"></rating>\n  </div>\n</ion-header>\n\n<ion-content>\n\n  <div [ngSwitch]="reserve">\n\n    <div *ngSwitchCase="\'partA\'">\n\n      <ion-slides #slides dir="rtl" [pager]="true" loop="true" onload="startAutoplay()" style="background-color: black">\n        <ion-slide *ngFor="let image of [1,2,3,4,5]">\n          <img height="50%" data-src="../assets/imgs/slide{{image}}.jpg">\n        </ion-slide>\n      </ion-slides>\n\n      <section padding>\n        <p>{{\'packageDetail.trip.date\'| translate}}</p>\n\n        <h5>{{\'packageDetail.trip.title-desc\'| translate}}</h5>\n\n        <article margin-bottom>\n          {{\'packageDetail.trip.details\'| translate}}\n          {{\'packageDetail.trip.details\'| translate}}\n        </article>\n      </section>\n\n     </div>\n\n    <div *ngSwitchCase="\'partB\'">\n\n      <ion-list radio-group>\n        <ion-item>\n          <ion-label>\n          <h5>اليوم الاول</h5>\n          <p>{{\'packageDetail.trip.details\'| translate}}</p>\n          </ion-label>\n          <ion-radio item-left  value="cord"></ion-radio>\n        </ion-item>\n\n        <ion-item>\n          <ion-label>\n            <h5>اليوم الثانى</h5>\n            <p>{{\'packageDetail.trip.details\'| translate}}</p>\n          </ion-label>\n          <ion-radio item-left value="duesenberg"></ion-radio>\n        </ion-item>\n\n        <ion-item>\n          <ion-label>\n            <h5>اليوم الثلاث</h5>\n            <p>{{\'packageDetail.trip.details\'| translate}}</p>\n          </ion-label>\n          <ion-radio item-left value="hudson"></ion-radio>\n        </ion-item>\n\n        <ion-item>\n          <ion-label>\n            <h5>اليوم الرابع</h5>\n            <p>{{\'packageDetail.trip.details\'| translate}}</p>\n          </ion-label>\n          <ion-radio item-left value="packard"></ion-radio>\n        </ion-item>\n\n        <ion-item>\n          <ion-label>\n            <h5>اليوم الخامس</h5>\n            <p>{{\'packageDetail.trip.details\'| translate}}</p>\n          </ion-label>\n          <ion-radio item-left value="studebaker"></ion-radio>\n        </ion-item>\n\n      </ion-list>\n    </div>\n\n\n    <div *ngSwitchCase="\'partC\'">\n\n      <ion-card  *ngFor="let Hotels_maka of Hotels_maka; let i = index;" >\n\n        <img (click)="HotelsMaka()" [src]="Hotels_maka.image" alt="air-bus">\n\n        <ion-card-content>\n          <ion-card-title [innerHTML]="Hotels_maka.title"></ion-card-title>\n          <p [innerHTML]="Hotels_maka.description"></p>\n        </ion-card-content>\n\n        <ion-row no-padding>\n          <ion-col>\n            <button ion-button clear small color="danger" icon-start>\n              <ion-icon ios="ios-heart" md="md-heart"></ion-icon>\n              اعجاب\n            </button>\n          </ion-col>\n          <ion-col text-center>\n            <button ion-button clear small  color="danger" icon-start>\n              <ion-icon ios="ios-document" md="md-document"></ion-icon>\n              اقراء المزيد\n            </button>\n          </ion-col>\n          <ion-col text-right>\n            <button ion-button clear small color="danger" icon-start>\n              <ion-icon name=\'share-alt\'></ion-icon>\n              مشاركه\n            </button>\n          </ion-col>\n        </ion-row>\n\n      </ion-card>\n\n      <ion-card  *ngFor="let Hotels_madina of Hotels_madina; let i = index;" >\n\n        <img  (click)="HotelsMadina()" [src]="Hotels_madina.image" alt="air-bus">\n\n        <ion-card-content>\n          <ion-card-title [innerHTML]="Hotels_madina.title"></ion-card-title>\n          <p [innerHTML]="Hotels_madina.description"></p>\n        </ion-card-content>\n\n        <ion-row no-padding>\n          <ion-col>\n            <button ion-button clear small color="danger" icon-start>\n              <ion-icon ios="ios-heart" md="md-heart"></ion-icon>\n              اعجاب\n            </button>\n          </ion-col>\n          <ion-col text-center>\n            <button ion-button clear small   color="danger" icon-start>\n              <ion-icon ios="ios-document" md="md-document"></ion-icon>\n              اقراء المزيد\n            </button>\n          </ion-col>\n          <ion-col text-right>\n            <button ion-button clear small color="danger" icon-start>\n              <ion-icon name=\'share-alt\'></ion-icon>\n              مشاركه\n            </button>\n          </ion-col>\n        </ion-row>\n\n      </ion-card>\n\n    </div>\n\n  </div>\n\n</ion-content>\n\n<ion-footer>\n  <button margin-top ion-button  round block (click)="doRadio()" color="danger">احجز الان </button>\n</ion-footer>\n'/*ion-inline-end:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/package-details/package-details.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */]) === "function" && _d || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */]])
     ], PackageDetailsPage);
     return PackageDetailsPage;
-    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=package-details.js.map
@@ -291,16 +286,15 @@ var MadinaHotelPage = /** @class */ (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Slides */]),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Slides */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Slides */]) === "function" && _a || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Slides */])
     ], MadinaHotelPage.prototype, "slides", void 0);
     MadinaHotelPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'page-madina-hotel',template:/*ion-inline-start:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/haj-omra-hotels/madina-hotel/madina-hotel.html"*/'\n<ion-header>\n\n  <ion-navbar>\n    <ion-title text-center>{{\'madinaHotels.title\' |translate}}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content >\n  <ion-slides #slides dir="rtl" [pager]="true" loop="true" onload="startAutoplay()" style="background-color: black">\n    <ion-slide *ngFor="let image of [1,2,3,4,5]">\n      <img height="50%" data-src="../assets/imgs/slide{{image}}.jpg">\n    </ion-slide>\n  </ion-slides>\n\n</ion-content>\n'/*ion-inline-end:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/haj-omra-hotels/madina-hotel/madina-hotel.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]])
     ], MadinaHotelPage);
     return MadinaHotelPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=madina-hotel.js.map
@@ -345,16 +339,15 @@ var MakaHotelPage = /** @class */ (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Slides */]),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Slides */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Slides */]) === "function" && _a || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Slides */])
     ], MakaHotelPage.prototype, "slides", void 0);
     MakaHotelPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'page-maka-hotel',template:/*ion-inline-start:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/haj-omra-hotels/maka-hotel/maka-hotel.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title text-center>{{\'makaHotels.title\' |translate}}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content >\n  <ion-slides #slides dir="rtl" [pager]="true" loop="true" onload="startAutoplay()" style="background-color: black">\n    <ion-slide *ngFor="let image of [1,2,3,4,5]">\n      <img height="50%" data-src="../assets/imgs/slide{{image}}.jpg">\n    </ion-slide>\n  </ion-slides>\n\n</ion-content>\n'/*ion-inline-end:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/haj-omra-hotels/maka-hotel/maka-hotel.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]])
     ], MakaHotelPage);
     return MakaHotelPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=maka-hotel.js.map
@@ -759,7 +752,7 @@ var HotelsPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2_auth___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angularfire2_auth__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_camera__ = __webpack_require__(150);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_firebase__ = __webpack_require__(349);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_firebase__ = __webpack_require__(350);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_firebase__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -881,7 +874,7 @@ var ProfilePage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CallPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutusPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(21);
@@ -898,36 +891,91 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the CallPage page.
+ * Generated class for the AboutusPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var CallPage = /** @class */ (function () {
-    function CallPage(navCtrl, navParams) {
+var AboutusPage = /** @class */ (function () {
+    function AboutusPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    CallPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad CallPage');
+    AboutusPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad AboutusPage');
     };
-    CallPage.prototype.backHome = function () {
+    AboutusPage.prototype.doRefresh = function (refresher) {
+        console.log('Begin async operation', refresher);
+        setTimeout(function () {
+            refresher.complete();
+        }, 2000);
+    };
+    AboutusPage.prototype.backHome = function () {
         this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_2__home_home__["a" /* HomePage */]);
     };
-    CallPage = __decorate([
+    AboutusPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-call',template:/*ion-inline-start:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/call/call.html"*/'\n<ion-header>\n\n\n    <ion-navbar>\n      <button ion-button menuToggle >\n        <ion-icon name="menu"></ion-icon>\n      </button>\n\n    <ion-title text-center> {{ \'call.title\' | translate }} </ion-title>\n\n      <ion-buttons start>\n        <button ion-button icon-only (click)="backHome()">\n          <ion-icon name="md-arrow-forward"></ion-icon>\n        </button>\n      </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n  <google-map></google-map>\n  <ion-row>\n  <ion-col col-12>\n    <ion-card>\n      <ion-card-header> {{ \'call.address.title\' | translate }}  </ion-card-header>\n      <ion-card-content>\n        <ion-list>\n          <ion-item>\n            <h5> {{ \'call.address.add\' | translate }}  </h5>\n            <ion-icon name="ios-pin" color="danger"></ion-icon>\n            {{ \'call.address.location\' | translate }}\n          </ion-item>\n\n\n          <ion-item>\n            <h5>{{ \'call.contact-us.title\' | translate }}</h5>\n            <ion-icon name="ios-call" color="danger"></ion-icon>\n            {{ \'call.contact-us.number\' | translate }}\n          </ion-item>\n        </ion-list>\n      </ion-card-content>\n    </ion-card>\n\n    <ion-card>\n      <ion-card-header>{{ \'call.address.title\' | translate }} </ion-card-header>\n      <ion-card-content>\n        <ion-list>\n          <ion-item>\n            <h5> {{ \'call.address.add\' | translate }}  </h5>\n            <ion-icon name="ios-pin" color="danger"></ion-icon>\n            {{ \'call.address.location\' | translate }}\n          </ion-item>\n\n          <ion-item>\n            <h5>{{ \'call.contact-us.title\' | translate }}</h5>\n            <ion-icon name="ios-call" color="danger"></ion-icon>\n            {{ \'call.contact-us.number\' | translate }}\n\n          </ion-item>\n        </ion-list>\n      </ion-card-content>\n    </ion-card>\n\n  </ion-col>\n</ion-row>\n</ion-content>\n'/*ion-inline-end:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/call/call.html"*/,
+            selector: 'page-aboutus',template:/*ion-inline-start:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/aboutus/aboutus.html"*/'\n<ion-header>\n\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title text-center>aboutus</ion-title>\n\n    <ion-buttons start>\n      <button ion-button icon-only (click)="backHome()">\n        <ion-icon name="md-arrow-forward"></ion-icon>\n      </button>\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content >\n\n  <ion-refresher (ionRefresh)="doRefresh($event)">\n    <ion-refresher-content></ion-refresher-content>\n  </ion-refresher>\n\n  <ion-row>\n    <ion-col col-12>\n      <img src="../../assets/imgs/airbus.jpg" alt="air-bus">\n      <h5 padding>من نحن</h5>\n      <article padding>\n        تمثلت النظره الاستراتيجيه لشركه ايرباص منذ انشائها كشركة للسياحة عام 1988بوضع اسس تحلّت بالإصرار للصعود الى القمة والبقاء عليها لتحقيق رؤيتها المستقبلية، يحيط ذلك الفكر تقديم أرقي مستويات الخدمة بحضور الأمانة والمصداقية والإخلاص في العمل . جاهدين في ذلك لتجاوز حاجز التوقعات والسعي لخلق تاثيرملحوظ  ودور ريادي بالقطاع السياحي المصري .\n        ومن خلال الدعم والمتابعة المستمرة من إدارة الشركة بتولى فريق من الكفاءات لتحقيق الرؤية بإتباع وتطوير السياسات العلمية والعملية التي انبتت ثمار جهودهاعلي ارض الواقع لتصبح ايرباص للسياحه الشركه الاكثر انتشارا بمصر كائنا في اكثر من 14 فرع داخل و خارج مصر .\n      </article>\n    </ion-col>\n  </ion-row>\n</ion-content>\n'/*ion-inline-end:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/aboutus/aboutus.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]])
-    ], CallPage);
-    return CallPage;
+    ], AboutusPage);
+    return AboutusPage;
 }());
 
-//# sourceMappingURL=call.js.map
+//# sourceMappingURL=aboutus.js.map
 
 /***/ }),
 
 /***/ 185:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GalleryDetailsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_photo_viewer__ = __webpack_require__(749);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the GalleryDetailsPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var GalleryDetailsPage = /** @class */ (function () {
+    function GalleryDetailsPage(navCtrl, navParams, photoViewer) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.photoViewer = photoViewer;
+    }
+    GalleryDetailsPage.prototype.openIt = function () {
+        this.photoViewer.show('./../../assets/imgs/trip_gallery_cover_.jpg');
+    };
+    GalleryDetailsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-gallery-details',template:/*ion-inline-start:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/gallery-details/gallery-details.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title text-center>{{\'gallery-details.title\' | translate}}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content >\n  <ion-row>\n    <ion-col col-12>\n      <img src="./../../assets/imgs/trip_gallery_cover_.jpg"/>\n      <p>\n        رحلات نصف العام مع شركة اير باص .. المتعة و الرفاهية و أفضل العروض معنا\n        تسعدنا خدمتك للوصول إلي اعلي درجات الرفاهية مع موديلات 2018 مع اير باص .. متعة التنقل و رفاهية الرحلة…\n      </p>\n    </ion-col>\n    <ion-col col-12>\n      <ion-card (click)="openIt()">\n        <div class="overlay"></div>\n        <img src="./../../assets/imgs/gallery_cover_1.jpg"/>\n      </ion-card>\n    </ion-col>\n\n    <ion-col col-6>\n      <ion-card (click)="openIt()">\n        <div class="overlay"></div>\n        <img src="./../../assets/imgs/gallery_cover_2.jpg"/>\n      </ion-card>\n    </ion-col>\n\n    <ion-col col-6>\n      <ion-card (click)="openIt()">\n        <div class="overlay"></div>\n        <img src="./../../assets/imgs/gallery_cover_4.png"/>\n      </ion-card>\n    </ion-col>\n  </ion-row>\n\n</ion-content>\n'/*ion-inline-end:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/gallery-details/gallery-details.html"*/,
+        }),
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_photo_viewer__["a" /* PhotoViewer */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_photo_viewer__["a" /* PhotoViewer */]) === "function" && _c || Object])
+    ], GalleryDetailsPage);
+    return GalleryDetailsPage;
+    var _a, _b, _c;
+}());
+
+//# sourceMappingURL=gallery-details.js.map
+
+/***/ }),
+
+/***/ 186:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -985,7 +1033,7 @@ var ForgetpassPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 186:
+/***/ 187:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1129,17 +1177,17 @@ var NewuserPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 187:
+/***/ 188:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GalleryPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_css_animator__ = __webpack_require__(350);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_css_animator__ = __webpack_require__(351);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_css_animator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_css_animator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_photo_viewer__ = __webpack_require__(353);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__gallery_details_gallery_details__ = __webpack_require__(185);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1155,20 +1203,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var GalleryPage = /** @class */ (function () {
-    function GalleryPage(navCtrl, navParams, animationService, photoViewer) {
+    function GalleryPage(navCtrl, navParams, animationService) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.photoViewer = photoViewer;
         this.animator = animationService.builder();
     }
+    GalleryPage.prototype.doRefresh = function (refresher) {
+        console.log('Begin async operation', refresher);
+        setTimeout(function () {
+            refresher.complete();
+        }, 2000);
+    };
     GalleryPage.prototype.animateElem = function () {
         this.animator.setType('pulse').show(this.myElem.nativeElement);
     };
     GalleryPage.prototype.openIt = function () {
-        this.photoViewer.show('../assets/imgs/slide2.jpg');
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__gallery_details_gallery_details__["a" /* GalleryDetailsPage */]);
     };
     GalleryPage.prototype.backHome = function () {
-        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_4__home_home__["a" /* HomePage */]);
+        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */]);
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('myElement'),
@@ -1176,20 +1229,19 @@ var GalleryPage = /** @class */ (function () {
     ], GalleryPage.prototype, "myElem", void 0);
     GalleryPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-gallery',template:/*ion-inline-start:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/gallery/gallery.html"*/'<ion-header>\n\n    <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n\n        <ion-title text-center> {{ \'gallery.title\' | translate }}</ion-title>\n\n        <ion-buttons start>\n            <button ion-button icon-only (click)="backHome()">\n                <ion-icon name="md-arrow-forward"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n    <ion-row>\n        <ion-col col-12 (click)="animateElem()" >\n            <ion-card>\n                <img #myElement src="../../assets/imgs/slide1.jpg"/>\n                <div class="card-title">\n                        {{\'gallery.photos.p1\'| translate}}\n                </div>\n            </ion-card>\n        </ion-col>\n\n        <ion-col col-6 >\n            <ion-card (click)="openIt()">\n                <img  src="../../assets/imgs/slide2.jpg"/>\n                <div class="card-title">\n                    {{\'gallery.photos.p2\'| translate}}\n                </div>\n            </ion-card>\n        </ion-col>\n\n        <ion-col col-6 (click)="openIt()">\n            <ion-card>\n                <img  src="../../assets/imgs/slide3.jpg"/>\n                <div class="card-title">\n                    {{\'gallery.photos.p3\'| translate}}\n                </div>\n            </ion-card>\n        </ion-col>\n        <ion-col col-12 (click)="animation3.start({type: \'pulse\', duration: \'1000\'})">\n            <ion-card>\n                <img  animates #animation3="animates" src="../../assets/imgs/slide4.jpg"/>\n                <div class="card-title">\n                    {{\'gallery.photos.p4\'| translate}}\n                </div>\n            </ion-card>\n        </ion-col>\n\n        <ion-col col-6 (click)="animation4.start({type: \'pulse\', duration: \'1000\'})">\n            <ion-card>\n                <img animates #animation4="animates"  src="../../assets/imgs/slide5.jpg"/>\n                <div class="card-title">\n                    {{\'gallery.photos.p5\'| translate}}\n                </div>\n            </ion-card>\n        </ion-col>\n\n        <ion-col col-6 (click)="animation5.start({type: \'pulse\', duration: \'1000\'})">\n            <ion-card>\n                <img animates #animation5="animates" src="../../assets/imgs/slide1.jpg"/>\n                <div class="card-title">\n                    {{\'gallery.photos.p6\'| translate}}\n                </div>\n            </ion-card>\n        </ion-col>\n    </ion-row>\n\n</ion-content>\n'/*ion-inline-end:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/gallery/gallery.html"*/,
+            selector: 'page-gallery',template:/*ion-inline-start:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/gallery/gallery.html"*/'<ion-header>\n\n    <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n\n        <ion-title text-center> {{ \'gallery.title\' | translate }}</ion-title>\n\n        <ion-buttons start>\n            <button ion-button icon-only (click)="backHome()">\n                <ion-icon name="md-arrow-forward"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n    <ion-refresher (ionRefresh)="doRefresh($event)">\n        <ion-refresher-content></ion-refresher-content>\n    </ion-refresher>\n    <ion-row>\n        <ion-col col-12>\n            <ion-card (click)="openIt()">\n                <div class="overlay"></div>\n                <img src="./../../assets/imgs/gallery_cover_1.jpg"/>\n                <div class="card-title">\n                    {{\'gallery.photos.p1\'| translate}}\n                </div>\n            </ion-card>\n        </ion-col>\n\n        <ion-col col-6>\n            <ion-card (click)="openIt()">\n                <div class="overlay"></div>\n                <img src="./../../assets/imgs/gallery_cover_2.jpg"/>\n                <div class="card-title">\n                    {{\'gallery.photos.p2\'| translate}}\n                </div>\n            </ion-card>\n        </ion-col>\n\n        <ion-col col-6>\n            <ion-card (click)="openIt()">\n                <div class="overlay"></div>\n                <img src="./../../assets/imgs/gallery_cover_3.jpg"/>\n                <div class="card-title">\n                    {{\'gallery.photos.p3\'| translate}}\n                </div>\n            </ion-card>\n        </ion-col>\n        <ion-col col-12>\n            <ion-card (click)="openIt()">\n                <div class="overlay"></div>\n                <img src="./../../assets/imgs/gallery_cover_4.png"/>\n                <div class="card-title">\n                        {{\'gallery.photos.p4\'| translate}}\n                </div>\n            </ion-card>\n        </ion-col>\n\n        <ion-col col-6>\n            <ion-card (click)="openIt()">\n                <div class="overlay"></div>\n                <img src="./../../assets/imgs/gallery_cover_5.jpg"/>\n                <div class="card-title">\n                    {{\'gallery.photos.p5\'| translate}}\n                </div>\n            </ion-card>\n        </ion-col>\n\n    </ion-row>\n\n</ion-content>\n'/*ion-inline-end:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/gallery/gallery.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2_css_animator__["AnimationService"],
-            __WEBPACK_IMPORTED_MODULE_3__ionic_native_photo_viewer__["a" /* PhotoViewer */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2_css_animator__["AnimationService"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_css_animator__["AnimationService"]) === "function" && _c || Object])
     ], GalleryPage);
     return GalleryPage;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=gallery.js.map
 
 /***/ }),
 
-/***/ 188:
+/***/ 189:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1225,7 +1277,7 @@ var TermsPage = /** @class */ (function () {
     };
     TermsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-terms',template:/*ion-inline-start:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/terms/terms.html"*/'\n<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle >\n      <ion-icon name="menu"></ion-icon>\n    </button>\n\n    <ion-title text-center>{{\'terms.title\' | translate}}</ion-title>\n    <ion-buttons start>\n      <button ion-button icon-only (click)="backHome()">\n        <ion-icon name="md-arrow-forward"></ion-icon>\n      </button>\n    </ion-buttons>>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n  <ion-row>\n    <ion-col col-12>\n      <p text-justify>\n        {{\'terms.data\' | translate}}\n      </p>\n      <p text-justify>\n        {{\'terms.data\' | translate}}\n      </p>\n      <p text-justify>\n        {{\'terms.data\' | translate}}\n      </p>\n      <p text-justify>\n        {{\'terms.data\' | translate}}\n      </p>\n    </ion-col>\n  </ion-row>\n\n</ion-content>\n'/*ion-inline-end:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/terms/terms.html"*/,
+            selector: 'page-terms',template:/*ion-inline-start:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/terms/terms.html"*/'\n<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle >\n      <ion-icon name="menu"></ion-icon>\n    </button>\n\n    <ion-title text-center>{{\'terms.title\' | translate}}</ion-title>\n    <ion-buttons start>\n      <button ion-button icon-only (click)="backHome()">\n        <ion-icon name="md-arrow-forward"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n  <ion-row>\n    <ion-col col-12>\n      <p>\n        {{\'terms.data\' | translate}}\n        {{\'terms.data\' | translate}}\n      </p>\n\n    </ion-col>\n  </ion-row>\n\n</ion-content>\n'/*ion-inline-end:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/terms/terms.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]])
     ], TermsPage);
@@ -1236,7 +1288,7 @@ var TermsPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 189:
+/***/ 190:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1296,7 +1348,7 @@ var VideosPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 199:
+/***/ 200:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -1309,7 +1361,7 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 199;
+webpackEmptyAsyncContext.id = 200;
 
 /***/ }),
 
@@ -1329,7 +1381,7 @@ webpackEmptyAsyncContext.id = 199;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__transportaion_transportaion__ = __webpack_require__(180);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__tickets_tickets__ = __webpack_require__(181);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__hotels_hotels__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_call_number__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_call_number__ = __webpack_require__(246);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_angularfire2_auth__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_angularfire2_auth___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_angularfire2_auth__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__profile_profile__ = __webpack_require__(183);
@@ -1449,84 +1501,88 @@ var HomePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 243:
+/***/ 244:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/aboutus/aboutus.module": [
-		756,
-		18
+		758,
+		19
 	],
 	"../pages/call/call.module": [
 		757,
-		17
+		18
 	],
 	"../pages/forgetpass/forgetpass.module": [
-		758,
+		760,
+		17
+	],
+	"../pages/gallery-details/gallery-details.module": [
+		759,
 		16
 	],
 	"../pages/gallery/gallery.module": [
-		759,
+		761,
 		15
 	],
 	"../pages/haj-omra-hotels/madina-hotel/madina-hotel.module": [
-		760,
+		762,
 		14
 	],
 	"../pages/haj-omra-hotels/maka-hotel/maka-hotel.module": [
-		761,
+		763,
 		13
 	],
 	"../pages/haj-omra/haj-omra.module": [
-		762,
+		766,
 		12
 	],
 	"../pages/hotels/hotels.module": [
-		763,
+		764,
 		11
 	],
 	"../pages/interntour/interntour.module": [
-		764,
+		765,
 		10
 	],
 	"../pages/localtour/localtour.module": [
-		765,
+		767,
 		9
 	],
 	"../pages/newuser/newuser.module": [
-		766,
+		768,
 		8
 	],
 	"../pages/package-details/package-details.module": [
-		767,
+		769,
 		7
 	],
 	"../pages/profile/profile.module": [
-		768,
+		771,
 		6
 	],
 	"../pages/settings/settings.module": [
-		769,
+		770,
 		5
 	],
 	"../pages/signin/signin.module": [
-		770,
+		772,
 		4
 	],
 	"../pages/terms/terms.module": [
-		771,
+		773,
 		3
 	],
 	"../pages/tickets/tickets.module": [
-		772,
+		776,
 		2
 	],
 	"../pages/transportaion/transportaion.module": [
-		773,
+		774,
 		1
 	],
 	"../pages/videos/videos.module": [
-		774,
+		775,
 		0
 	]
 };
@@ -1541,7 +1597,7 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 243;
+webpackAsyncContext.id = 244;
 module.exports = webpackAsyncContext;
 
 /***/ }),
@@ -1553,7 +1609,7 @@ module.exports = webpackAsyncContext;
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(399);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(403);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_take__ = __webpack_require__(320);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_take__ = __webpack_require__(321);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_take___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_take__);
 
 
@@ -1573,22 +1629,22 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(393);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(746);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(245);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_http_loader__ = __webpack_require__(747);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_call_number__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_call_number__ = __webpack_require__(246);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_file_transfer__ = __webpack_require__(394);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_file__ = __webpack_require__(748);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_splash_screen__ = __webpack_require__(395);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_camera__ = __webpack_require__(150);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_photo_viewer__ = __webpack_require__(353);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers_images_images__ = __webpack_require__(749);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_photo_viewer__ = __webpack_require__(749);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers_images_images__ = __webpack_require__(750);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_language_language__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__app_component__ = __webpack_require__(750);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_newuser_newuser__ = __webpack_require__(186);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_css_animator__ = __webpack_require__(350);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__app_component__ = __webpack_require__(751);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_newuser_newuser__ = __webpack_require__(187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_css_animator__ = __webpack_require__(351);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_css_animator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17_css_animator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__firebase_credentials__ = __webpack_require__(751);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_angularfire2__ = __webpack_require__(752);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__firebase_credentials__ = __webpack_require__(752);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_angularfire2__ = __webpack_require__(753);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_angularfire2___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19_angularfire2__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_angularfire2_auth__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_angularfire2_auth___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_20_angularfire2_auth__);
@@ -1597,25 +1653,26 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_home_home__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__ionic_native_status_bar__ = __webpack_require__(396);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_signin_signin__ = __webpack_require__(71);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_forgetpass_forgetpass__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_forgetpass_forgetpass__ = __webpack_require__(186);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_haj_omra_haj_omra__ = __webpack_require__(174);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_localtour_localtour__ = __webpack_require__(178);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_interntour_interntour__ = __webpack_require__(179);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_transportaion_transportaion__ = __webpack_require__(180);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_tickets_tickets__ = __webpack_require__(181);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__pages_hotels_hotels__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32_ionic2_rating__ = __webpack_require__(753);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__pages_videos_videos__ = __webpack_require__(189);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__pages_gallery_gallery__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__pages_call_call__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__pages_aboutus_aboutus__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32_ionic2_rating__ = __webpack_require__(754);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__pages_videos_videos__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__pages_gallery_gallery__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__pages_call_call__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__pages_aboutus_aboutus__ = __webpack_require__(184);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__pages_settings_settings__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__components_google_map_google_map__ = __webpack_require__(755);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__pages_terms_terms__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__components_google_map_google_map__ = __webpack_require__(756);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__pages_terms_terms__ = __webpack_require__(189);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__pages_profile_profile__ = __webpack_require__(183);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__pages_package_details_package_details__ = __webpack_require__(175);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__pages_haj_omra_hotels_madina_hotel_madina_hotel__ = __webpack_require__(176);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__pages_haj_omra_hotels_maka_hotel_maka_hotel__ = __webpack_require__(177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__pages_gallery_details_gallery_details__ = __webpack_require__(185);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1668,6 +1725,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -1691,6 +1749,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_30__pages_tickets_tickets__["a" /* TicketsPage */],
                 __WEBPACK_IMPORTED_MODULE_31__pages_hotels_hotels__["a" /* HotelsPage */],
                 __WEBPACK_IMPORTED_MODULE_34__pages_gallery_gallery__["a" /* GalleryPage */],
+                __WEBPACK_IMPORTED_MODULE_44__pages_gallery_details_gallery_details__["a" /* GalleryDetailsPage */],
                 __WEBPACK_IMPORTED_MODULE_33__pages_videos_videos__["a" /* VideosPage */],
                 __WEBPACK_IMPORTED_MODULE_35__pages_call_call__["a" /* CallPage */],
                 __WEBPACK_IMPORTED_MODULE_36__pages_aboutus_aboutus__["a" /* AboutusPage */],
@@ -1729,25 +1788,26 @@ var AppModule = /** @class */ (function () {
                     }
                 }, {
                     links: [
-                        { loadChildren: '../pages/aboutus/aboutus.module#AboutusPageModule', name: 'AboutusPage', segment: 'aboutus', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/call/call.module#CallPageModule', name: 'CallPage', segment: 'call', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/aboutus/aboutus.module#AboutusPageModule', name: 'AboutusPage', segment: 'aboutus', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/gallery-details/gallery-details.module#GalleryDetailsPageModule', name: 'GalleryDetailsPage', segment: 'gallery-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/forgetpass/forgetpass.module#ForgetpassPageModule', name: 'ForgetpassPage', segment: 'forgetpass', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/gallery/gallery.module#GalleryPageModule', name: 'GalleryPage', segment: 'gallery', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/haj-omra-hotels/madina-hotel/madina-hotel.module#MadinaHotelPageModule', name: 'MadinaHotelPage', segment: 'madina-hotel', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/haj-omra-hotels/maka-hotel/maka-hotel.module#MakaHotelPageModule', name: 'MakaHotelPage', segment: 'maka-hotel', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/haj-omra/haj-omra.module#HajOmraPageModule', name: 'HajOmraPage', segment: 'haj-omra', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/hotels/hotels.module#HotelsPageModule', name: 'HotelsPage', segment: 'hotels', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/interntour/interntour.module#InterntourPageModule', name: 'InterntourPage', segment: 'interntour', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/haj-omra/haj-omra.module#HajOmraPageModule', name: 'HajOmraPage', segment: 'haj-omra', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/localtour/localtour.module#LocaltourPageModule', name: 'LocaltourPage', segment: 'localtour', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/newuser/newuser.module#NewuserPageModule', name: 'NewuserPage', segment: 'newuser', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/package-details/package-details.module#PackageDetailsPageModule', name: 'PackageDetailsPage', segment: 'package-details', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/profile/profile.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/settings/settings.module#SettingsPageModule', name: 'SettingsPage', segment: 'settings', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/profile/profile.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/signin/signin.module#SigninPageModule', name: 'SigninPage', segment: 'signin', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/terms/terms.module#TermsPageModule', name: 'TermsPage', segment: 'terms', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/tickets/tickets.module#TicketsPageModule', name: 'TicketsPage', segment: 'tickets', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/transportaion/transportaion.module#TransportaionPageModule', name: 'TransportaionPage', segment: 'transportaion', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/videos/videos.module#VideosPageModule', name: 'VideosPage', segment: 'videos', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/videos/videos.module#VideosPageModule', name: 'VideosPage', segment: 'videos', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/tickets/tickets.module#TicketsPageModule', name: 'TicketsPage', segment: 'tickets', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 //initialize fire base module
@@ -1782,6 +1842,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_30__pages_tickets_tickets__["a" /* TicketsPage */],
                 __WEBPACK_IMPORTED_MODULE_31__pages_hotels_hotels__["a" /* HotelsPage */],
                 __WEBPACK_IMPORTED_MODULE_34__pages_gallery_gallery__["a" /* GalleryPage */],
+                __WEBPACK_IMPORTED_MODULE_44__pages_gallery_details_gallery_details__["a" /* GalleryDetailsPage */],
                 __WEBPACK_IMPORTED_MODULE_33__pages_videos_videos__["a" /* VideosPage */],
                 __WEBPACK_IMPORTED_MODULE_35__pages_call_call__["a" /* CallPage */],
                 __WEBPACK_IMPORTED_MODULE_36__pages_aboutus_aboutus__["a" /* AboutusPage */],
@@ -1819,11 +1880,11 @@ var AppModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__forgetpass_forgetpass__ = __webpack_require__(185);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__newuser_newuser__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__forgetpass_forgetpass__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__newuser_newuser__ = __webpack_require__(187);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angularfire2_auth__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angularfire2_auth___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_angularfire2_auth__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_firebase__ = __webpack_require__(349);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_firebase__ = __webpack_require__(350);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_firebase__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1957,7 +2018,7 @@ var SigninPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 749:
+/***/ 750:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2018,7 +2079,7 @@ var ImagesProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 750:
+/***/ 751:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2031,10 +2092,10 @@ var ImagesProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_signin_signin__ = __webpack_require__(71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_language_language__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_gallery_gallery__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_videos_videos__ = __webpack_require__(189);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_call_call__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_aboutus_aboutus__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_gallery_gallery__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_videos_videos__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_call_call__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_aboutus_aboutus__ = __webpack_require__(184);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_settings_settings__ = __webpack_require__(98);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2122,7 +2183,7 @@ var MyApp = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 751:
+/***/ 752:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2139,7 +2200,7 @@ var FIREBASE_CREDENTIALS = {
 
 /***/ }),
 
-/***/ 755:
+/***/ 756:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2197,7 +2258,7 @@ var GoogleMapComponent = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LanguageProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(245);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(10);
@@ -2271,7 +2332,7 @@ var LanguageProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_language_language__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__terms_terms__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__terms_terms__ = __webpack_require__(189);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home__ = __webpack_require__(21);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;

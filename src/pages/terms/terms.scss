@@ -1,3 +1,19 @@
 page-terms {
-
+  font-family: 'Cairo', sans-serif !important;
+  background: url("../../assets/imgs/bg-home.jpg") no-repeat no-repeat top left !important;
+  background-size: cover !important;
+  height: 100vh !important;
+  ion-content {
+    background: transparent !important;
+    p {
+      margin-top: 0 !important;
+      color: color($colors,dark) !important;
+      font-size: 18px;
+      font-weight: lighter;
+      word-spacing: 0px;
+      line-break: auto;
+      letter-spacing: 0px;
+      line-height: 1.8em;
+    }
+  }
 }

@@ -46,6 +46,7 @@ import {ProfilePage} from "../pages/profile/profile";
 import {PackageDetailsPage} from "../pages/package-details/package-details";
 import {MadinaHotelPage} from "../pages/haj-omra-hotels/madina-hotel/madina-hotel";
 import {MakaHotelPage} from "../pages/haj-omra-hotels/maka-hotel/maka-hotel";
+import {GalleryDetailsPage} from "../pages/gallery-details/gallery-details";
 
 
 @NgModule({
@@ -67,6 +68,7 @@ import {MakaHotelPage} from "../pages/haj-omra-hotels/maka-hotel/maka-hotel";
     TicketsPage,
     HotelsPage,
     GalleryPage,
+    GalleryDetailsPage,
     VideosPage,
     CallPage,
     AboutusPage,
@@ -143,6 +145,7 @@ import {MakaHotelPage} from "../pages/haj-omra-hotels/maka-hotel/maka-hotel";
     TicketsPage,
     HotelsPage,
     GalleryPage,
+    GalleryDetailsPage,
     VideosPage,
     CallPage,
     AboutusPage,

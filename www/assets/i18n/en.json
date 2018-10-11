@@ -33,13 +33,15 @@
   "gallery":{
     "title":"photo Album",
     "photos":{
-      "p1":"France",
-      "p2":"Italy",
-      "p3":"Roma",
-      "p4":"Paris",
-      "p5":"Turkish",
-      "p6":"Ordon"
+      "p1":"رحلات نصف العام ايرباص تورز 2018",
+      "p2":"موديلات 2018  اير باص",
+      "p3":"رحلات الاقصر و اسوان",
+      "p4":"بطولة الباراموتور",
+      "p5":"رحلات سياحة داخلية"
     }
+  },
+  "gallery-details":{
+    "title":"Trip pictures"
   },
   "settings":{
     "title":"setting",
@@ -64,7 +66,7 @@
   },
   "terms":{
     "title":"Terms and Conditions",
-    "data":" THIS AIRBUS APPLICATION MAY CONTAIN INACCURACIES AND TYPOGRAPHICAL ERRORS. WE DOES NOT WARRANT THE ACCURACY OR COMPLETENESS OF THE MATERIALS OR THE RELIABILITY OF ANY ADVICE, OPINION, STATEMENT OR OTHER INFORMATION DISPLAYED OR DISTRIBUTED THROUGH THE SITE. YOU EXPRESSLY UNDERSTAND AND AGREE "
+    "data":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like"
   },
   "packageDetail":{
     "title":"The Name Of Package",

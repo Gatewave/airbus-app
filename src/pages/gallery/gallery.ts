@@ -1,8 +1,8 @@
 import {Component, ViewChild} from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AnimationService, AnimationBuilder } from 'css-animator';
-import { PhotoViewer } from '@ionic-native/photo-viewer';
 import {HomePage} from "../home/home";
+import {GalleryDetailsPage} from "../gallery-details/gallery-details";
 
 
 
@@ -20,19 +20,27 @@ export class GalleryPage {
 
   constructor(public navCtrl: NavController,
               public navParams: NavParams,animationService: AnimationService,
-              private photoViewer: PhotoViewer
+
 
   ) {
       this.animator = animationService.builder();
   }
+    doRefresh(refresher) {
+        console.log('Begin async operation', refresher);
 
+        setTimeout(() => {
+            refresher.complete();
+        }, 2000);
+    }
 
     animateElem() {
         this.animator.setType('pulse').show(this.myElem.nativeElement);
     }
+
     openIt(){
-        this.photoViewer.show('../assets/imgs/slide2.jpg');
+      this.navCtrl.push(GalleryDetailsPage)
     }
+
     backHome(){
         this.navCtrl.setRoot(HomePage)
     }

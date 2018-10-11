@@ -33,13 +33,15 @@
   "gallery":{
     "title":"البوم صور",
     "photos":{
-      "p1":"فرنسا",
-      "p2":"ايطاليا",
-      "p3":"روما",
-      "p4":"باريس",
-      "p5":"تركيا",
-      "p6":"الاردن"
+      "p1":"رحلات نصف العام ايرباص تورز 2018",
+      "p2":"موديلات 2018  اير باص",
+      "p3":"رحلات الاقصر و اسوان",
+      "p4":"بطولة الباراموتور",
+      "p5":"رحلات سياحة داخلية"
     }
+  },
+  "gallery-details":{
+    "title":"صور الرحله"
   },
   "settings":{
     "title":"الاعدادات",
@@ -64,7 +66,7 @@
   },
   "terms":{
   "title":"الشروط و الاحكام",
-  "data":" THIS AIRBUS APPLICATION MAY CONTAIN INACCURACIES AND TYPOGRAPHICAL ERRORS. WE DOES NOT WARRANT THE ACCURACY OR COMPLETENESS OF THE MATERIALS OR THE RELIABILITY OF ANY ADVICE, OPINION, STATEMENT OR OTHER INFORMATION DISPLAYED OR DISTRIBUTED THROUGH THE SITE. YOU EXPRESSLY UNDERSTAND AND AGREE "
+  "data":"إنها حقيقة راسخة أن القارئ سوف يصرفه محتوى مقروء للصفحة عندما ينظر إلى تخطيطه. إن الهدف من استخدام لوريم إيبسوم هو أن لديه توزيعًا عاديًا أو غير عادي للحروف ، بدلاً من استخدام المحتوى هنا ، المحتوى هنا  مما يجعله يبدو الإنجليزية قابلة للقراءة. تستخدم العديد من حزم النشر المكتبي ومحرري صفحات الويب الآن العديد من مواقع الويب التي لا تزال في مهدها. تطورت الإصدارات المختلفة على مر السنين ، وأحيانًا عن طريق الصدفة ، وأحيانًا عن طريق الحَقن ، وما إلى ذلك"
   },
   "packageDetail":{
     "title":"اسم العرض",
