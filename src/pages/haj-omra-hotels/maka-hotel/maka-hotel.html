@@ -1,0 +1,17 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title text-center>{{'makaHotels.title' |translate}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+  <ion-slides #slides dir="rtl" [pager]="true" loop="true" onload="startAutoplay()" style="background-color: black">
+    <ion-slide *ngFor="let image of [1,2,3,4,5]">
+      <img height="50%" data-src="../assets/imgs/slide{{image}}.jpg">
+    </ion-slide>
+  </ion-slides>
+
+</ion-content>

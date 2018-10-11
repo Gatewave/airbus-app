@@ -1,0 +1,21 @@
+page-interntour {
+  font-family: 'Cairo', sans-serif !important;
+  background: url("../../assets/imgs/bg-home.jpg") no-repeat no-repeat top left !important;
+  background-size: cover !important;
+  height: 100vh !important;
+  ion-content {
+    background: transparent !important;
+
+
+    .card-md{
+      background-color: color($colors,light)!important;
+      border-radius: 15px;
+    }
+
+
+
+
+
+
+  }
+}

@@ -1,0 +1,63 @@
+page-haj-omra {
+  font-family: 'Cairo', sans-serif !important;
+  background: url("../../assets/imgs/bg-home.jpg") no-repeat no-repeat top left !important;
+  background-size: cover !important;
+  height: 100vh !important;
+  ion-content {
+    background: transparent !important;
+      ion-card {
+        position: relative;
+        text-align: center;
+        height: 180px;
+        border-radius: 15px !important;
+        .card-title {
+          padding-right: 3px;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          font-size: 1.0em;
+          width: 60%;
+          font-weight: bold;
+          color: color($colors,light);
+          background-color:color($colors,danger);
+          border-top-left-radius: 20px;
+          text-align: right;
+
+        rating{
+            ul {
+              padding: 0;
+              z-index: 9999;
+              position: initial;
+              margin: 0;
+
+
+              &.rating li {
+                padding: 4px!important;
+                background: none;
+                color: #ffb400;
+
+                ion-icon {
+                  font-size: 1.4em;
+                }
+              }
+            }
+          }
+        }
+
+        .card-subtitle {
+          font-size: 1.0em;
+          padding: 6px;
+          font-weight: 600;
+          position: absolute;
+          top: 20px;
+          left: 0 !important;
+          display: inline-block;
+          color: color($colors,light);
+          background-color:color($colors,danger);
+        }
+      }
+
+
+  }
+}
+

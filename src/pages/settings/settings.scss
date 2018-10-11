@@ -1,0 +1,25 @@
+page-settings {
+  font-family: 'Cairo', sans-serif !important;
+  background: url("../../assets/imgs/bg-home.jpg") no-repeat no-repeat top left !important;
+  background-size: cover !important;
+  height: 100vh !important;
+  ion-content {
+    background: transparent !important;
+    ion-row {
+      ion-col[col-12] {
+        ion-list {
+          ion-item-group {
+            button[ion-item]:first-child {
+              margin-top: 15px;
+            }
+            button[ion-item] {
+              margin-bottom: 15px;
+              border-radius: 8px;
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

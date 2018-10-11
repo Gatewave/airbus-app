@@ -1,0 +1,108 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle >
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title text-center> {{ 'main.title' | translate }} </ion-title>
+
+    <ion-buttons start>
+      <button ion-button icon-only (click)="presentPopover()">
+        <ion-icon name="ios-contact"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-buttons start>
+      <button ion-button icon-only (click)="changeLanguage()">
+        <ion-icon name="md-globe"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-row>
+    <ion-slides #slides dir="rtl" [pager]="true" loop="true" onload="startAutoplay()" style="background-color: black">
+      <ion-slide *ngFor="let image of [1,2,3,4,5]">
+        <img height="50%" data-src="../assets/imgs/slide{{image}}.jpg">
+      </ion-slide>
+    </ion-slides>
+  </ion-row>
+
+  <ion-row id="grid_menu">
+    <ion-col col-4>
+      <ion-card (click)="haj()">
+        <ion-icon   ios="ios-globe" md="md-globe"></ion-icon>
+        <div class="card-title"> {{ 'main.tabs.haj' | translate }} </div>
+      </ion-card>
+    </ion-col>
+
+
+    <ion-col col-4>
+      <ion-card (click)="localtour()">
+        <ion-icon ios="ios-plane" md="md-plane"></ion-icon>
+        <div class="card-title"> {{ 'main.tabs.localtour' | translate }} </div>
+      </ion-card>
+    </ion-col>
+
+
+    <ion-col col-4>
+      <ion-card (click)="interntour()">
+        <ion-icon ios="ios-planet" md="md-planet"></ion-icon>
+        <div class="card-title"> {{ 'main.tabs.interntour' | translate }} </div>
+      </ion-card>
+    </ion-col>
+
+
+
+    <ion-col col-4>
+      <ion-card (click)="transportaion()">
+        <ion-icon ios="ios-bus" md="md-bus"></ion-icon>
+        <div class="card-title"> {{ 'main.tabs.transportation' | translate }} </div>
+      </ion-card>
+    </ion-col>
+
+
+
+    <ion-col col-4>
+      <ion-card (click)="tickets()">
+        <ion-icon ios="ios-paper" md="md-paper"></ion-icon>
+        <div class="card-title"> {{ 'main.tabs.tickets' | translate }} </div>
+      </ion-card>
+    </ion-col>
+
+
+
+    <ion-col col-4>
+      <ion-card (click)="hotels()">
+        <ion-icon  md="md-home"></ion-icon>
+        <div class="card-title"> {{ 'main.tabs.hotels' | translate }} </div>
+      </ion-card>
+    </ion-col>
+
+    <ion-col col-12 margin-top>
+      <div align-self-center id="news">
+
+        <p>
+          <span>{{ 'main.news' | translate }}</span>
+          {{ 'main.news-details' | translate }}
+        </p>
+      </div>
+      <!--<p>user : {{(profileData | async)?.username}}</p>-->
+      <!--<p>user: {{(profileData | async)?.firstName}}</p>-->
+      <!--<p>user: {{(profileData | async)?.lastName}}</p>-->
+    </ion-col>
+
+  </ion-row>
+</ion-content>
+
+<ion-footer>
+  <ion-fab right bottom>
+    <button ion-fab  (click)="call()" color="light">
+      <ion-icon color="danger" name="md-call"></ion-icon></button>
+  </ion-fab>
+</ion-footer>

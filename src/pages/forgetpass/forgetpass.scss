@@ -1,0 +1,40 @@
+page-forgetpass {
+  font-family: 'Cairo', sans-serif!important;
+  background: url("../../assets/imgs/banner-home3.jpg")no-repeat no-repeat top left !important;
+  background-size: cover !important;
+  height: 100vh !important;
+  ion-content {
+    background: transparent!important;
+    ion-row{
+      ion-col[col-12]{
+        text-align: center;
+        h5{
+          color: color($colors,danger) !important;
+          font-weight: 300;
+          margin-top:50px !important;
+        }
+        img{
+          display: inline-block!important;
+          margin-top:50px ;
+        }
+      }
+      ion-col[col-12]{
+        ion-list{
+          .text-input{margin: 0 !important;}
+          ion-item{
+            border-radius: 20px;
+            box-shadow: 1px 1px 1px rgba(86,86,86,0.56) !important;
+            font-size: 1.0em !important;
+            ion-input{
+              direction: rtl !important;
+            }
+
+          }
+        }
+
+
+      }
+    }
+  }
+
+}

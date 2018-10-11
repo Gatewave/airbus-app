@@ -1,0 +1,100 @@
+{
+  "Page-A":"الرئيسه",
+  "Page-B":"البوم صور",
+  "Page-C":"معرض فيديو",
+  "Page-D":"اتصل بنا",
+  "Page-E":"عن الشركه",
+  "Page-F":"ضبط الاعدادات",
+
+  "list": {
+      "haj": "الحج و العمره",
+      "localtour": "سياحه داخليه",
+      "interntour": "سياحه خارجيه",
+      "transportation": "نقل سياحى",
+      "hotels": "حجوزات فنادق",
+      "tickets": "تذاكر طيران"
+    },
+  "toolbar":{
+    "title":"اير باص"
+  },
+  "main": {
+    "title": "الرئيسيه",
+    "tabs": {
+      "haj": "الحج و العمره",
+      "localtour": "سياحه داخليه",
+      "interntour": "سياحه خارجيه",
+      "transportation": "نقل سياحى",
+      "hotels": "حجوزات فنادق",
+      "tickets": "تذاكر طيران"
+    },
+    "news":"احدث الاخبار",
+    "news-details":"تفاصيل الخبر الاول 6 يوليو 2018"
+  },
+  "gallery":{
+    "title":"البوم صور",
+    "photos":{
+      "p1":"فرنسا",
+      "p2":"ايطاليا",
+      "p3":"روما",
+      "p4":"باريس",
+      "p5":"تركيا",
+      "p6":"الاردن"
+    }
+  },
+  "settings":{
+    "title":"الاعدادات",
+    "language":"لغة التطبيق",
+    "data":"عربى",
+    "terms":"الشروط و الاحكام"
+  },
+  "call":{
+    "title":"اتصل بنا",
+    "address":{
+      "title":"فرع الياض",
+      "location":"شارع الامارات خلف كرارفور",
+      "add":"العنوان:"
+    },
+    "contact-us":{
+      "title":"اتصل بنا:",
+      "number":"+99966662121"
+    }
+  },
+  "buttons":{
+    "singout":"تسجيل الخروج"
+  },
+  "terms":{
+  "title":"الشروط و الاحكام",
+  "data":" THIS AIRBUS APPLICATION MAY CONTAIN INACCURACIES AND TYPOGRAPHICAL ERRORS. WE DOES NOT WARRANT THE ACCURACY OR COMPLETENESS OF THE MATERIALS OR THE RELIABILITY OF ANY ADVICE, OPINION, STATEMENT OR OTHER INFORMATION DISPLAYED OR DISTRIBUTED THROUGH THE SITE. YOU EXPRESSLY UNDERSTAND AND AGREE "
+  },
+  "packageDetail":{
+    "title":"اسم العرض",
+    "tabs":{
+      "1":"تفاصيل العرض",
+      "2":"برنامج الرحله",
+      "3":"فنادق الرحله"
+    },
+    "trip":{
+      "name":"اسم الرحله-",
+      "place":"موقع الرحله",
+      "cost":"15.000 جنيه مصرى",
+      "date":"تاريخ السفر من 9-11-2017 / الى 9-11-2017",
+      "title-desc":"تفاصيل العرض",
+      "details":" 5 نجوم الاقامة لمدة 5 أيام في المدينة في فندق أجياد"
+    }
+  },
+  "videos":{
+    "title":"معرض الفيديو",
+    "userName":"محمد",
+    "postDate":"10يونيو 1998",
+    "like":" اعجاب",
+    "comment":" تعليقات",
+    "description":"فيديو عن إنتاج فيديو إنتاج أوروبا: اكتشف سياحة لندن عاصمة إنجلترا / المملكة المتحدة. لندن ، وجهة السفر الأوروبية الرائدة مع بيغ بن ، تاور بريدج ، قصر باكنغهام"
+  },
+  "madinaHotels":{
+    "title":"فندق المدينه"
+  },
+  "makaHotels":{
+    "title":"فندق مكه"
+  }
+
+}

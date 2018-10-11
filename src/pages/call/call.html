@@ -1,0 +1,69 @@
+
+<ion-header>
+
+
+    <ion-navbar>
+      <button ion-button menuToggle >
+        <ion-icon name="menu"></ion-icon>
+      </button>
+
+    <ion-title text-center> {{ 'call.title' | translate }} </ion-title>
+
+      <ion-buttons start>
+        <button ion-button icon-only (click)="backHome()">
+          <ion-icon name="md-arrow-forward"></ion-icon>
+        </button>
+      </ion-buttons>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <google-map></google-map>
+  <ion-row>
+  <ion-col col-12>
+    <ion-card>
+      <ion-card-header> {{ 'call.address.title' | translate }}  </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item>
+            <h5> {{ 'call.address.add' | translate }}  </h5>
+            <ion-icon name="ios-pin" color="danger"></ion-icon>
+            {{ 'call.address.location' | translate }}
+          </ion-item>
+
+
+          <ion-item>
+            <h5>{{ 'call.contact-us.title' | translate }}</h5>
+            <ion-icon name="ios-call" color="danger"></ion-icon>
+            {{ 'call.contact-us.number' | translate }}
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>{{ 'call.address.title' | translate }} </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item>
+            <h5> {{ 'call.address.add' | translate }}  </h5>
+            <ion-icon name="ios-pin" color="danger"></ion-icon>
+            {{ 'call.address.location' | translate }}
+          </ion-item>
+
+          <ion-item>
+            <h5>{{ 'call.contact-us.title' | translate }}</h5>
+            <ion-icon name="ios-call" color="danger"></ion-icon>
+            {{ 'call.contact-us.number' | translate }}
+
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+
+  </ion-col>
+</ion-row>
+</ion-content>

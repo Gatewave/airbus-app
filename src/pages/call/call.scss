@@ -1,0 +1,38 @@
+page-call {
+  font-family: 'Cairo', sans-serif !important;
+  background: url("../../assets/imgs/bg-home.jpg") no-repeat no-repeat top left !important;
+  background-size: cover !important;
+  height: 100vh !important;
+  ion-content {
+    background: transparent !important;
+    ion-row {
+      ion-col[col-12] {
+        ion-card{
+          background: transparent !important;
+          border-radius: 8px;
+          border:1px solid color($colors, dark);
+
+          ion-card-header{
+            padding: 0 16px;
+          }
+          ion-card-content{
+            background: transparent !important;
+
+            ion-list{
+              background: transparent !important;
+
+              ion-item{
+                background: transparent !important;
+                margin: 0;
+                padding-right: 0;
+                ion-label{
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

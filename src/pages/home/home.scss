@@ -1,0 +1,90 @@
+page-home {
+    font-family: 'Cairo', sans-serif !important;
+    background: url("../../assets/imgs/bg-home.jpg") no-repeat no-repeat top left !important;
+    background-size: cover !important;
+    height: 100vh !important;
+    ion-content {
+        background: transparent !important;
+        .swiper-container-horizontal > .swiper-pagination-progress {
+            bottom: 0 !important;
+            top: initial !important;
+            position: absolute;
+        }
+        ion-row {
+            ion-slides {
+                .swiper-pagination-progress .swiper-pagination-progressbar {
+                    background: color($colors, danger) !important;
+                }
+                height: 150px !important;
+                ion-slide {
+                    width: 100% !important;
+                    height: 160px !important;
+
+                    img {
+                        width: 100% !important;
+                        height: 160px !important;
+
+                    }
+                }
+            }
+        }
+        ion-row[id="grid_menu"] {
+            direction: rtl;
+            ion-card {
+                position: relative;
+                text-align: center;
+                width: 100%;
+                height: 100%;
+                margin: 25px 0 0 0 !important;
+                background-color: color($colors, light);
+                padding: 15px 0;
+                border-radius: 5px;
+
+                ion-icon {
+                    color: color($colors, danger);
+                    font-size: 3.3em;
+                }
+                .card-title {
+                    position: absolute;
+                    top: 52%;
+                    font-size: 1.0em;
+                    width: 100%;
+                    font-weight: bold;
+                    padding-top: 15px;
+                    color: color($colors, dark);
+                }
+            }
+            ion-col[col-12] {
+                div[id="news"] {
+                    direction: rtl;
+                    margin-top: 35px !important;
+
+                    p {
+                        color: color($colors, light);
+                        background-color:color($colors, secondary);
+                        border-top-left-radius: 25px;
+                        border-top-right-radius: 25px;
+                        border-bottom-left-radius: 25px;
+                        margin: 0;
+                        border-bottom-right-radius: 25px;
+                        padding: 17px 0 17px 15px;
+                        span {
+                            color: color($colors, light);
+                            background-color:color($colors, danger);
+                            padding: 17px 10px;
+                            border-top-right-radius: 25px;
+                            border-bottom-right-radius: 25px;
+                            margin: 0 0 0 10px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+    ion-footer{
+        background: url("../../assets/imgs/footer.jpg") no-repeat no-repeat top center !important;
+        background-size: cover !important;
+        height: 11Vh;
+    }
+}

@@ -1,0 +1,177 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle >
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-center>تذاكر طيران</ion-title>
+    <ion-buttons start>
+      <button ion-button icon-only (click)="backHome()">
+        <ion-icon name="md-arrow-forward"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="tutorial-page">
+
+  <ion-slides pager dir="rtl">
+
+
+    <ion-slide *ngFor="let slidesList of slidesList">
+      <ion-toolbar>
+        <ion-buttons end>
+          <button ion-button (click)="goToSlide()" color="primary">التالى</button>
+        </ion-buttons>
+      </ion-toolbar>
+      <img [src]="slidesList.image" class="slide-image"/>
+      <h2 class="slide-title" [innerHTML]="slidesList.title"></h2>
+      <p [innerHTML]="slidesList.description"></p>
+
+    </ion-slide>
+
+    <ion-slide>
+      <ion-toolbar [color]="drak">
+        <ion-buttons end>
+          <button ion-button (click)="goToSlide()" color="primary">التالى</button>
+        </ion-buttons>
+        <ion-buttons float-right>
+          <button ion-button (click)="slideChanged()" color="primary">الخلف</button>
+        </ion-buttons>
+      </ion-toolbar>
+      <ion-list padding>
+        <ion-item>
+          <ion-input required placeholder="اسم العميل" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input required placeholder="أدخل بريدك الإلكتروني" type="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input required placeholder="رقم الهاتف" type="tel"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input placeholder="رقم اخر" type="tel"></ion-input>
+        </ion-item>
+
+        <ion-list radio-group [(ngModel)]="autoManufacturers">
+        <ion-item>
+          <ion-label stacked> ذهاب فقط </ion-label>
+          <ion-radio value="oneWay"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>ذهاب و عودة</ion-label>
+          <ion-radio value="twoWay"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>وجهات متعددة</ion-label>
+          <ion-radio value="many"></ion-radio>
+        </ion-item>
+        </ion-list>
+
+      </ion-list>
+
+    </ion-slide>
+
+    <ion-slide>
+      <ion-toolbar [color]="drak">
+        <ion-buttons end>
+          <button ion-button (click)="goToSlide()" color="primary">التالى</button>
+        </ion-buttons>
+        <ion-buttons float-right>
+          <button ion-button (click)="slideChanged()" color="primary">الخلف</button>
+        </ion-buttons>
+      </ion-toolbar>
+      <ion-list padding>
+        <ion-item>
+          <ion-label no-margin>تاريخ السفر</ion-label>
+          <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+        </ion-item>
+
+        <ion-item>
+          <ion-input placeholder="بلد المغادرة" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input placeholder="مدينة المغادرة" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input placeholder="بلد الوصول" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="مدينة الوصول" type="text"></ion-input>
+        </ion-item>
+
+      </ion-list>
+
+    </ion-slide>
+
+    <ion-slide>
+      <ion-toolbar>
+        <ion-buttons end>
+          <button ion-button (click)="goToSlide()" color="primary">التالى</button>
+        </ion-buttons>
+        <ion-buttons float-right>
+          <button ion-button (click)="slideChanged()" color="primary">الخلف</button>
+        </ion-buttons>
+      </ion-toolbar>
+      <ion-list padding>
+
+        <ion-item>
+          <ion-label  stacked>البالغين (+12)سنة</ion-label>
+          <ion-select required [(ngModel)]="teen">
+            <ion-option value="h">Female</ion-option>
+            <ion-option value="l">Male</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>الاطفال (2-12) سنة</ion-label>
+          <ion-select [(ngModel)]="kids">
+            <ion-option value="h">Female</ion-option>
+            <ion-option value="l">Male</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>الرضع (0-2) سنة</ion-label>
+          <ion-select [(ngModel)]="babes">
+            <ion-option value="h">Female</ion-option>
+            <ion-option value="l">Male</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>الدرجة المطلوبة</ion-label>
+          <ion-select [(ngModel)]="room-kind">
+            <ion-option value="h">Female</ion-option>
+            <ion-option value="l">Male</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-input required placeholder="الشركة الناقلة" type="text"></ion-input>
+        </ion-item>
+        <button ion-button full  round color="danger">احجز الرحلة</button>
+
+      </ion-list>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-toolbar>
+        <ion-buttons end>
+          <button ion-button (click)="presentLoading()" color="primary">انهاء</button>
+        </ion-buttons>
+      </ion-toolbar>
+      <img src="../../assets/imgs/04.png" class="slide-image"/>
+      <h2 class="slide-title">لقد قمت بالحجز بنجاح شكرا لك</h2>
+    </ion-slide>
+
+  </ion-slides>
+
+</ion-content>

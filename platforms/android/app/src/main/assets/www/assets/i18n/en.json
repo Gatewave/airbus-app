@@ -1,0 +1,86 @@
+{
+  "Page-A":"Main",
+  "Page-B":"Gallery",
+  "Page-C":"Videos",
+  "Page-D":"Contact Us",
+  "Page-E":"About Us",
+  "Page-F":"Settings",
+
+  "list": {
+    "haj": "Haj & Omrah",
+    "localtour": "Local Tourism",
+    "interntour": "Intern Tourism",
+    "transportation": "Transportation",
+    "hotels": "Reserve Hotels",
+    "tickets": "Flight Tickets"
+  },
+  "toolbar":{
+  "title":"Air Bus"
+},
+  "main": {
+    "title": "main",
+    "tabs": {
+      "haj": "Haj & Omrah",
+      "localtour": "Local Tourism",
+      "interntour": "Intern Tourism",
+      "transportation": "Transportation",
+      "hotels": "Reserve Hotels",
+      "tickets": "Flight Tickets"
+    },
+    "news":"Latest News",
+    "news-details":"The Details 1st 6 july 2018"
+  },
+  "gallery":{
+    "title":"photo Album",
+    "photos":{
+      "p1":"France",
+      "p2":"Italy",
+      "p3":"Roma",
+      "p4":"Paris",
+      "p5":"Turkish",
+      "p6":"Ordon"
+    }
+  },
+  "settings":{
+    "title":"setting",
+    "language":"application language",
+    "data":"English",
+    "terms":"terms and conditions"
+  },
+  "call":{
+    "title":" Contact Us",
+    "address":{
+      "title":"Riyadh Branch",
+      "location":"Emarites Street behind Carfore ",
+      "add":"Address:"
+    },
+    "contact-us":{
+      "title":" Call Us",
+      "number":"+99966662121"
+    }
+  },
+  "buttons":{
+    "singout":"Sign Out"
+  },
+  "terms":{
+    "title":"Terms and Conditions",
+    "data":" THIS AIRBUS APPLICATION MAY CONTAIN INACCURACIES AND TYPOGRAPHICAL ERRORS. WE DOES NOT WARRANT THE ACCURACY OR COMPLETENESS OF THE MATERIALS OR THE RELIABILITY OF ANY ADVICE, OPINION, STATEMENT OR OTHER INFORMATION DISPLAYED OR DISTRIBUTED THROUGH THE SITE. YOU EXPRESSLY UNDERSTAND AND AGREE "
+  },
+  "packageDetail":{
+    "title":"The Name Of Package",
+    "tabs":{
+      "1":"Package Details",
+      "2":"Trip Program  ",
+      "3":"Hotels Of Trip"
+    },
+    "trip":{
+      "name":"Trip Name -",
+      "place":"Trip Place",
+      "cost":"15.000 Egyptian Pounds",
+      "date":"Traveling Date from 20-11-2017 / to 20-11-2017",
+      "title-desc":"Title Description",
+      "details":" 5 days in a Saudi Arabia 5 Stars Agiad Hotel "
+    }
+  }
+
+}

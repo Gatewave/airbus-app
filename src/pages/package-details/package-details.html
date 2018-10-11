@@ -1,0 +1,179 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle >
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-center>{{'packageDetail.title' | translate}}</ion-title>
+  </ion-navbar>
+
+  <ion-toolbar no-border-top>
+    <ion-segment  color="danger"  [(ngModel)]="reserve">
+      <ion-segment-button   value="partA">
+        {{'packageDetail.tabs.1'| translate}}
+      </ion-segment-button>
+      <ion-segment-button   value="partB">
+        {{'packageDetail.tabs.2'| translate}}
+      </ion-segment-button>
+      <ion-segment-button   value="partC">
+        {{'packageDetail.tabs.3'| translate}}
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+  <div class="info_bar">
+    <p>
+      <span>{{'packageDetail.trip.name'| translate}}</span>
+      <span>{{'packageDetail.trip.place'| translate}}</span>
+      <span>{{'packageDetail.trip.cost'| translate}}</span>
+    </p>
+    <rating [(ngModel)]="rate" max="5" halfStarIconName="star-half" (ngModelChange)="onModelChange($event)"></rating>
+  </div>
+</ion-header>
+
+<ion-content>
+
+  <div [ngSwitch]="reserve">
+
+    <div *ngSwitchCase="'partA'">
+
+      <ion-slides #slides dir="rtl" [pager]="true" loop="true" onload="startAutoplay()" style="background-color: black">
+        <ion-slide *ngFor="let image of [1,2,3,4,5]">
+          <img height="50%" data-src="../assets/imgs/slide{{image}}.jpg">
+        </ion-slide>
+      </ion-slides>
+
+      <section padding>
+        <p>{{'packageDetail.trip.date'| translate}}</p>
+
+        <h5>{{'packageDetail.trip.title-desc'| translate}}</h5>
+
+        <article margin-bottom>
+          {{'packageDetail.trip.details'| translate}}
+          {{'packageDetail.trip.details'| translate}}
+        </article>
+      </section>
+
+     </div>
+
+    <div *ngSwitchCase="'partB'">
+
+      <ion-list radio-group>
+        <ion-item>
+          <ion-label>
+          <h5>اليوم الاول</h5>
+          <p>{{'packageDetail.trip.details'| translate}}</p>
+          </ion-label>
+          <ion-radio item-left  value="cord"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>
+            <h5>اليوم الثانى</h5>
+            <p>{{'packageDetail.trip.details'| translate}}</p>
+          </ion-label>
+          <ion-radio item-left value="duesenberg"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>
+            <h5>اليوم الثلاث</h5>
+            <p>{{'packageDetail.trip.details'| translate}}</p>
+          </ion-label>
+          <ion-radio item-left value="hudson"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>
+            <h5>اليوم الرابع</h5>
+            <p>{{'packageDetail.trip.details'| translate}}</p>
+          </ion-label>
+          <ion-radio item-left value="packard"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>
+            <h5>اليوم الخامس</h5>
+            <p>{{'packageDetail.trip.details'| translate}}</p>
+          </ion-label>
+          <ion-radio item-left value="studebaker"></ion-radio>
+        </ion-item>
+
+      </ion-list>
+    </div>
+
+
+    <div *ngSwitchCase="'partC'">
+
+      <ion-card  *ngFor="let Hotels_maka of Hotels_maka; let i = index;" >
+
+        <img (click)="HotelsMaka()" [src]="Hotels_maka.image" alt="air-bus">
+
+        <ion-card-content>
+          <ion-card-title [innerHTML]="Hotels_maka.title"></ion-card-title>
+          <p [innerHTML]="Hotels_maka.description"></p>
+        </ion-card-content>
+
+        <ion-row no-padding>
+          <ion-col>
+            <button ion-button clear small color="danger" icon-start>
+              <ion-icon ios="ios-heart" md="md-heart"></ion-icon>
+              اعجاب
+            </button>
+          </ion-col>
+          <ion-col text-center>
+            <button ion-button clear small  color="danger" icon-start>
+              <ion-icon ios="ios-document" md="md-document"></ion-icon>
+              اقراء المزيد
+            </button>
+          </ion-col>
+          <ion-col text-right>
+            <button ion-button clear small color="danger" icon-start>
+              <ion-icon name='share-alt'></ion-icon>
+              مشاركه
+            </button>
+          </ion-col>
+        </ion-row>
+
+      </ion-card>
+
+      <ion-card  *ngFor="let Hotels_madina of Hotels_madina; let i = index;" >
+
+        <img  (click)="HotelsMadina()" [src]="Hotels_madina.image" alt="air-bus">
+
+        <ion-card-content>
+          <ion-card-title [innerHTML]="Hotels_madina.title"></ion-card-title>
+          <p [innerHTML]="Hotels_madina.description"></p>
+        </ion-card-content>
+
+        <ion-row no-padding>
+          <ion-col>
+            <button ion-button clear small color="danger" icon-start>
+              <ion-icon ios="ios-heart" md="md-heart"></ion-icon>
+              اعجاب
+            </button>
+          </ion-col>
+          <ion-col text-center>
+            <button ion-button clear small   color="danger" icon-start>
+              <ion-icon ios="ios-document" md="md-document"></ion-icon>
+              اقراء المزيد
+            </button>
+          </ion-col>
+          <ion-col text-right>
+            <button ion-button clear small color="danger" icon-start>
+              <ion-icon name='share-alt'></ion-icon>
+              مشاركه
+            </button>
+          </ion-col>
+        </ion-row>
+
+      </ion-card>
+
+    </div>
+
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <button margin-top ion-button  round block (click)="doRadio()" color="danger">احجز الان </button>
+</ion-footer>

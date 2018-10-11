@@ -1,0 +1,7 @@
+{
+  "name": "AirBus",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

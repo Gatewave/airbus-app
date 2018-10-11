@@ -1,0 +1,155 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle >
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-center>حجوزات فنادق</ion-title>
+    <ion-buttons start>
+      <button ion-button icon-only (click)="backHome()">
+        <ion-icon name="md-arrow-forward"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="tutorial-page">
+
+  <ion-slides pager dir="rtl">
+
+
+    <ion-slide *ngFor="let slidesList of slidesList">
+      <ion-toolbar>
+        <ion-buttons end>
+          <button ion-button (click)="goToSlide()" color="primary">التالى</button>
+        </ion-buttons>
+      </ion-toolbar>
+      <img [src]="slidesList.image" class="slide-image"/>
+      <h2 class="slide-title" [innerHTML]="slidesList.title"></h2>
+      <p [innerHTML]="slidesList.description"></p>
+
+    </ion-slide>
+
+    <ion-slide>
+      <ion-toolbar [color]="drak">
+        <ion-buttons end>
+          <button ion-button (click)="goToSlide()" color="primary">التالى</button>
+        </ion-buttons>
+        <ion-buttons float-right>
+          <button ion-button (click)="slideChanged()" color="primary">الخلف</button>
+        </ion-buttons>
+      </ion-toolbar>
+      <ion-list padding>
+        <ion-item>
+          <ion-input  placeholder="اسم العميل" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="الهاتف" type="tel"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="أدخل بريدك الإلكتروني" type="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="اسم المدينة" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="اسم الفندق" type="text"></ion-input>
+        </ion-item>
+      </ion-list>
+
+    </ion-slide>
+
+    <ion-slide>
+      <ion-toolbar>
+        <ion-buttons end>
+          <button ion-button (click)="goToSlide()" color="primary">التالى</button>
+        </ion-buttons>
+        <ion-buttons float-right>
+          <button ion-button (click)="slideChanged()" color="primary">الخلف</button>
+        </ion-buttons>
+      </ion-toolbar>
+      <ion-list padding>
+
+        <ion-item>
+          <ion-label stacked>عدد النجوم</ion-label>
+          <ion-select [(ngModel)]="stars">
+            <ion-option value="h">Female</ion-option>
+            <ion-option value="l">Male</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>عدد الغرف</ion-label>
+          <ion-select [(ngModel)]="rooms">
+            <ion-option value="h">Female</ion-option>
+            <ion-option value="l">Male</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>عدد الافراد</ion-label>
+          <ion-select [(ngModel)]="count">
+            <ion-option value="h">Female</ion-option>
+            <ion-option value="l">Male</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>البالغين (+12)سنة</ion-label>
+          <ion-select [(ngModel)]="teen">
+            <ion-option value="h">Female</ion-option>
+            <ion-option value="l">Male</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>الاطفال (2-12) سنة</ion-label>
+          <ion-select [(ngModel)]="kids">
+            <ion-option value="h">Female</ion-option>
+            <ion-option value="l">Male</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>الرضع (0-2) سنة</ion-label>
+          <ion-select [(ngModel)]="babes">
+            <ion-option value="h">Female</ion-option>
+            <ion-option value="l">Male</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>نوع الغرفة</ion-label>
+          <ion-select [(ngModel)]="room-kind">
+            <ion-option value="h">Female</ion-option>
+            <ion-option value="l">Male</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>نوع الإطلالة</ion-label>
+          <ion-select [(ngModel)]="apperance">
+            <ion-option value="f">Female</ion-option>
+            <ion-option value="m">Male</ion-option>
+          </ion-select>
+        </ion-item>
+        <button ion-button full  round color="danger">احجز الرحلة</button>
+
+      </ion-list>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-toolbar>
+        <ion-buttons end>
+          <button ion-button (click)="presentLoading()" color="primary">انهاء</button>
+        </ion-buttons>
+      </ion-toolbar>
+      <img src="../../assets/imgs/04.png" class="slide-image"/>
+      <h2 class="slide-title">لقد قمت بالحجز بنجاح شكرا لك</h2>
+    </ion-slide>
+
+  </ion-slides>
+
+</ion-content>
+

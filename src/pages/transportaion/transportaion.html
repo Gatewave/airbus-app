@@ -1,0 +1,160 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle >
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-center>نقل سياحى</ion-title>
+    <ion-buttons start>
+      <button ion-button icon-only (click)="backHome()">
+        <ion-icon name="md-arrow-forward"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content  class="tutorial-page">
+
+  <ion-slides pager dir="rtl">
+
+
+    <ion-slide *ngFor="let slidesList of slidesList">
+      <ion-toolbar>
+        <ion-buttons end>
+          <button ion-button (click)="goToSlide()" color="primary">التالى</button>
+        </ion-buttons>
+      </ion-toolbar>
+      <img [src]="slidesList.image" class="slide-image"/>
+      <h2 class="slide-title" [innerHTML]="slidesList.title"></h2>
+      <p [innerHTML]="slidesList.description"></p>
+
+    </ion-slide>
+
+    <ion-slide>
+      <ion-toolbar [color]="drak">
+        <ion-buttons end>
+          <button ion-button (click)="goToSlide()" color="primary">التالى</button>
+        </ion-buttons>
+        <span>طلب حجز حافلة سياحية</span>
+        <ion-buttons float-right>
+          <button ion-button (click)="slideChanged()" color="primary">الخلف</button>
+        </ion-buttons>
+      </ion-toolbar>
+
+      <ion-list padding>
+        <ion-item>
+          <ion-input required placeholder="اسم الشركة" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input required placeholder="البريد الاليكتروني" type="mail"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input required placeholder="رقم الهاتف" type="tel"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input placeholder="رقم أخر" type="tel"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>نوع الحافلة</ion-label>
+          <ion-select required [(ngModel)]="rooms">
+            <ion-option value="h">نوع الحافلة</ion-option>
+            <ion-option value="l">Male</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>عدد الحافلات</ion-label>
+          <ion-select required [(ngModel)]="rooms">
+            <ion-option value="h">عدد الحافلات</ion-option>
+            <ion-option value="l">Male</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-list margin-bottom radio-group [(ngModel)]="autoManufacturers">
+          <ion-item>
+            <ion-label stacked> ذهاب فقط </ion-label>
+            <ion-radio value="oneWay"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label stacked>ذهاب و عودة</ion-label>
+            <ion-radio value="twoWay"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label stacked>وجهات متعددة</ion-label>
+            <ion-radio value="many"></ion-radio>
+          </ion-item>
+
+        </ion-list>
+
+      </ion-list>
+
+    </ion-slide>
+
+    <ion-slide>
+      <ion-toolbar [color]="drak">
+        <ion-buttons end>
+          <button ion-button (click)="goToSlide()" color="primary">التالى</button>
+        </ion-buttons>
+        <span>بيانات رحلة الذهاب</span>
+        <ion-buttons float-right>
+          <button ion-button (click)="slideChanged()" color="primary">الخلف</button>
+        </ion-buttons>
+      </ion-toolbar>
+      <ion-list padding>
+
+        <ion-item>
+          <ion-label stacked>اختر اليوم</ion-label>
+          <ion-select [(ngModel)]="rooms">
+            <ion-option value="h">اختر اليوم</ion-option>
+            <ion-option value="l">Male</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label no-margin>التاريخ</ion-label>
+          <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+        </ion-item>
+
+        <ion-item>
+          <ion-input placeholder="المدينة من" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input placeholder="المدينة الى" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input placeholder="موقع التشغيل" type="text"></ion-input>
+        </ion-item>
+   <ion-item>
+          <ion-input placeholder="ساعة تواجد الحافلة" type="text"></ion-input>
+        </ion-item>
+
+      </ion-list>
+
+      <button ion-button full  round color="danger">احجز الرحلة</button>
+
+    </ion-slide>
+
+    <ion-slide>
+      <ion-toolbar>
+        <ion-buttons end>
+          <button ion-button (click)="presentLoading()" color="primary">انهاء</button>
+        </ion-buttons>
+      </ion-toolbar>
+      <img src="../../assets/imgs/04.png" class="slide-image"/>
+      <h2 class="slide-title">لقد قمت بالحجز بنجاح شكرا لك</h2>
+
+    </ion-slide>
+
+  </ion-slides>
+
+</ion-content>

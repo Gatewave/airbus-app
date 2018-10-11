@@ -1,0 +1,43 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title text-center>تسجيل مستخدم جديد</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-row>
+    <ion-col col-6 offset-3 >
+      <input type='file' (change)="readUrl($event)">
+      <img [src]="url">
+    </ion-col>
+
+    <ion-col col-12>
+
+      <ion-list>
+        <ion-item margin-bottom>
+          <ion-input type="text" [(ngModel)]="profile.username"  full round dir="rtl" placeholder=" الاسم"></ion-input>
+        </ion-item>
+
+        <ion-item margin-bottom>
+          <ion-input type="email" [(ngModel)]="profile.mail" [(ngModel)]="user.email" full round dir="rtl" placeholder="البريد الالكترونى"></ion-input>
+        </ion-item>
+
+        <ion-item margin-bottom>
+          <ion-input type="tel"  [(ngModel)]="profile.mobile" full round dir="rtl" placeholder=" رقم الهاتف"></ion-input>
+        </ion-item>
+
+        <ion-item margin-bottom>
+          <ion-input type="password" [(ngModel)]="user.password" full round dir="rtl" placeholder="الرقم السرى"></ion-input>
+        </ion-item>
+
+        <ion-item margin-bottom>
+          <ion-input type="password" [(ngModel)]="profile.password" full round dir="rtl" placeholder="اعادة الرقم السرى "></ion-input>
+        </ion-item>
+      </ion-list>
+      <button ion-button full round (click)="register(user)">انشاء حساب جديد</button>
+    </ion-col>
+  </ion-row>
+</ion-content>

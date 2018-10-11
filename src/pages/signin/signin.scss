@@ -1,0 +1,94 @@
+page-signin {
+  font-family: 'Cairo', sans-serif!important;
+  background: url("../../assets/imgs/banner-home3.jpg")no-repeat no-repeat top left !important;
+  background-size: cover !important;
+  height: 100vh !important;
+  animation-name: backCover;
+  animation-duration: 60s;
+  animation-delay: -2s;
+  animation-iteration-count: infinite;
+
+  @keyframes backCover {
+    0%   {background-position: top left;}
+    25%  {background-position: top right;}
+    50%  {background-position: top left;}
+  }
+  ion-content {
+    background: transparent!important;
+    ion-row{
+      ion-col[col-12]{
+        text-align: center;
+        h5{
+          color: color($colors,danger) !important;
+          font-weight: 300;
+          margin-top:50px !important;
+        }
+        img{
+          display: inline-block!important;
+          margin-top:10px ;
+        }
+      }
+      ion-col[col-12]{
+        ion-list{
+          .text-input{margin: 0 !important;}
+          ion-item{
+            border-radius: 20px;
+            box-shadow: 1px 1px 1px rgba(86,86,86,0.56) !important;
+            font-size: 1.0em !important;
+            ion-input{
+              direction: rtl !important;
+            }
+
+          }
+        }
+        p.social_icons{
+          span:nth-child(1){
+            color:color($colors,light)!important;
+            font-size:1.2em!important;
+            background-color:color($social_icon,facebook)!important;
+            border-radius: 50%!important;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            padding: 5px;
+          }
+          span:nth-child(2){
+            color:color($colors,light)!important;
+            font-size:1.2em!important;
+            background-color:color($social_icon,twitter)!important;
+            border-radius: 50%!important;
+            margin: 0 8px;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            padding: 5px;
+          }
+          span:nth-child(3){
+            color:color($colors,light)!important;
+            font-size:1.2em!important;
+            background-color:color($social_icon,google)!important;
+            border-radius: 50%!important;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            padding: 5px;
+          }
+        }
+
+        button[color="dark"]{
+        height: 50px !important;
+        }
+        p{
+          a{
+            color:color($colors,dark) !important;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+
+}

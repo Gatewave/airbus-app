@@ -1,0 +1,30 @@
+page-maka-hotel {
+  font-family: 'Cairo', sans-serif !important;
+  background: url("../../assets/imgs/bg-home.jpg") no-repeat no-repeat top left !important;
+  background-size: cover !important;
+  height: 100vh !important;
+  ion-content {
+    background-color: transparent !important;
+    .swiper-container-horizontal > .swiper-pagination-progress {
+      bottom: 0 !important;
+      top: initial !important;
+      position: absolute;
+    }
+    ion-slides {
+      .swiper-pagination-progress .swiper-pagination-progressbar {
+        background: color($colors, danger) !important;
+      }
+      height: 150px !important;
+      ion-slide {
+        width: 100% !important;
+        height: 160px !important;
+
+        img {
+          width: 100% !important;
+          height: 160px !important;
+        }
+      }
+    }
+  }
+
+}

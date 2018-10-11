@@ -1,0 +1,82 @@
+page-hotels {
+  font-family: 'Cairo', sans-serif !important;
+  background: url("../../assets/imgs/bg-home.jpg") no-repeat no-repeat top left !important;
+  background-size: cover !important;
+  height: 100vh !important;
+
+
+  ion-content {
+    background: transparent !important;
+    .swiper-pagination-bullet-active{
+      background: color($colors,secondary)!important;
+    }
+
+    span{
+      color:color($colors,white)!important;
+    }
+
+    ion-buttons{
+
+      button{
+        font-weight: bold !important;
+      }
+
+    }
+    ion-list{
+      .text-input{margin: 0 !important;}
+      ion-item{
+        border-radius: 20px;
+        box-shadow: 1px 1px 1px rgba(86,86,86,0.56) !important;
+        font-size: 14px !important;
+        margin:0 0 15px 0 !important;
+        ion-label{
+          position: absolute;
+          color:color($colors,danger)!important;
+          font-size: 14px !important;
+        }
+        ion-input{
+          direction: rtl !important;
+        }
+
+      }
+    }
+    .toolbar-background {
+      background: color($colors,secondary)!important;
+      border-color: transparent;
+
+    }
+
+    .slide-zoom {
+      height: 100%;
+    }
+
+    .slide-title {
+      margin-top: 2.8rem;
+    }
+
+    .slide-image {
+      max-height: 50%;
+      max-width: 60%;
+      margin: 18px 0;
+    }
+
+    b {
+      font-weight: 500;
+    }
+
+    p {
+      padding: 0 40px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #60646B;
+
+      b {
+        color: #000000;
+      }
+    }
+
+  }
+
+
+
+}

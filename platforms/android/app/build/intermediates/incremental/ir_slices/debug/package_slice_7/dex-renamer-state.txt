@@ -1,0 +1,4 @@
+#Wed Oct 10 17:41:03 EET 2018
+base.0=/home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/build/intermediates/transforms/dexMerger/debug/7
+path.0=classes.dex
+renamed.0=classes.dex

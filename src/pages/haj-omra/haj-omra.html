@@ -1,0 +1,36 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle >
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title text-center>الحج و العمره</ion-title>
+
+    <ion-buttons start>
+      <button ion-button icon-only (click)="backHome()">
+        <ion-icon name="md-arrow-forward"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-card *ngFor="let HajOmraList of HajOmraList" (click)="packageDetails()">
+    <img animates #animation6="animates" [src]="HajOmraList.image"/>
+    <div class="card-title">
+<span [innerHTML]="HajOmraList.title"></span>
+      <rating [(ngModel)]="rate" max="5" halfStarIconName="star-half" (ngModelChange)="onModelChange($event)"></rating>
+    </div>
+    <div class="card-subtitle" [innerHTML]="HajOmraList.price"></div>
+  </ion-card>
+
+
+</ion-content>

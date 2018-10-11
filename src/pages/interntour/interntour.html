@@ -1,0 +1,56 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle >
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-center>سياحه خارجيه</ion-title>
+    <ion-buttons start>
+      <button ion-button icon-only (click)="backHome()">
+        <ion-icon name="md-arrow-forward"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-toolbar color="danger">
+    <ion-searchbar placeholder="ابحث" (ionInput)="filterItems($event)"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="cards-bg">
+
+  <ion-card *ngFor="let InternCardList of InternCardList">
+
+    <img [src]="InternCardList.image" alt="air-bus">
+
+    <ion-card-content>
+      <ion-card-title [innerHTML]="InternCardList.title"></ion-card-title>
+      <p [innerHTML]="InternCardList.description"></p>
+    </ion-card-content>
+
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="danger" icon-start>
+          <ion-icon ios="ios-heart" md="md-heart"></ion-icon>
+          اعجاب
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="danger" icon-start>
+          <ion-icon ios="ios-document" md="md-document"></ion-icon>
+          احجز الان
+        </button>
+      </ion-col>
+      <ion-col text-right>
+        <button ion-button clear small color="danger" icon-start>
+          <ion-icon name='share-alt'></ion-icon>
+          مشاركه
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+
+
+
+</ion-content>
