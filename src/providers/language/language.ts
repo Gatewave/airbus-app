@@ -24,7 +24,7 @@ export class LanguageProvider {
     present() {
         this.actionSheetCtrl.create({
             title: 'أختر اللغة',
-            cssClass: 'action-sheets-basic-page',
+            cssClass: '.action-sheet-ios .action-sheet-group:last-child',
             buttons: [
                 {
                     text: 'العربية',

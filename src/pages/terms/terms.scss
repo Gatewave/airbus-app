@@ -8,12 +8,18 @@ page-terms {
     p {
       margin-top: 0 !important;
       color: color($colors,dark) !important;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: lighter;
       word-spacing: 0px;
       line-break: auto;
       letter-spacing: 0px;
-      line-height: 1.8em;
+      line-height: 1.3em;
+      text-align: justify;
+    }
+    ol{
+      li{
+
+      }
     }
   }
 }

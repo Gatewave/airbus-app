@@ -13,6 +13,25 @@ page-package-details {
     background: color($colors, white) !important;
     padding: 10px;
   }
+  .toolbar .segment-ios {
+    margin: 0 auto;
+    background: color($colors, white) !important;
+    padding: 10px;
+  }
+  .toolbar-ios .segment-button{
+    height: 3.0em!important;
+  }
+  .radio-ios .radio-icon{
+    background-color:  color($colors, grey_text);
+    border-radius: 50%;
+    height: 20px !important;
+    width: 20px!important;
+    margin: 2px!important;
+    transition: all ease-in-out 0.5s !important;
+  }
+  .item-ios .radio-ios{
+    margin: 0!important;
+  }
   ion-header{
     ion-toolbar {
       background-color: transparent !important;

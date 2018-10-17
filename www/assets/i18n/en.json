@@ -5,6 +5,9 @@
   "Page-D":"Contact Us",
   "Page-E":"About Us",
   "Page-F":"Settings",
+  "Page-G":"Haj & Omrah",
+  "Page-H":"Local Tourism",
+  "Page-I":"Intern Tourism",
 
   "list": {
     "haj": "Haj & Omrah",
@@ -28,7 +31,10 @@
       "tickets": "Flight Tickets"
     },
     "news":"Latest News",
-    "news-details":"The Details 1st 6 july 2018"
+    "news-details":"The Details 1st 6 july 2018 that we have an offer 50% to luxur and aswan including dinner and breakfast"
+  },
+  "about":{
+    "title":"About Us"
   },
   "gallery":{
     "title":"photo Album",
@@ -85,10 +91,22 @@
     }
   },
   "madinaHotels":{
-    "title":"Madina Hotel"
+    "title":"Madina Hotel",
+    "name":"Madina Hotel Name",
+    "location":"Saudi Arabia/ Madina",
+    "meal": "include Breakfast" ,
+    "date":"9 august 2018",
+    "days":"5 days",
+    "room":" room in front of Haram"
   },
   "makaHotels":{
-    "title":"Makah Hotel"
+    "title":"Makah Hotel",
+    "name":"Makah Hotel Name",
+    "location":"Saudi Arabia/ Makah",
+    "meal": "include Breakfast" ,
+    "date":"9 august 2018",
+    "days":"5 days",
+    "room":" room in front of Haram"
   }
 
 }

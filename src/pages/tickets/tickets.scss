@@ -10,6 +10,10 @@ page-tickets {
     .swiper-pagination-bullet-active {
       background: color($colors, secondary) !important;
     }
+    .swiper-container-horizontal > .swiper-pagination-bullets{
+      bottom: 0!important;
+    }
+
 
     span {
       color: color($colors, white) !important;
@@ -26,17 +30,17 @@ page-tickets {
       .text-input {
         margin: 0 !important;
       }
-      ion-item {
-        border-radius: 20px;
+      ion-item,.item-ios {
+        border-radius: 20px !important;
         box-shadow: 1px 1px 1px rgba(86, 86, 86, 0.56) !important;
         font-size: 14px !important;
-        margin: 0 0 15px 0 !important;
+        margin: 0 0 8px 0 !important;
         ion-label {
           position: absolute;
           color: color($colors, danger) !important;
           font-size: 14px !important;
         }
-        ion-input {
+        ion-input,.text-input-ios,.text-input-md {
           direction: rtl !important;
         }
 

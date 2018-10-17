@@ -5,5 +5,10 @@ page-aboutus {
   height: 100vh !important;
   ion-content {
     background: transparent !important;
+    h5{
+      padding-bottom: 0!important;
+      margin-bottom: 0 !important;
+    }
   }
+
 }

@@ -8,10 +8,41 @@
 
 
 <ion-content >
-  <ion-slides #slides dir="rtl" [pager]="true" loop="true" onload="startAutoplay()" style="background-color: black">
-    <ion-slide *ngFor="let image of [1,2,3,4,5]">
-      <img height="50%" data-src="../assets/imgs/slide{{image}}.jpg">
-    </ion-slide>
-  </ion-slides>
+  <ion-row>
+    <ion-slides #slides dir="rtl" [pager]="true" loop="true" onload="startAutoplay()" style="background-color: black">
+      <ion-slide *ngFor="let image of [1,2,3,4,5,6]">
+        <img height="50%" data-src="../assets/imgs/hajWom{{image}}.jpg">
+      </ion-slide>
+    </ion-slides>
+    <ion-col col-12>
+      <h2>{{'makaHotels.name' |translate}}</h2>
+      <p>
+        <ion-icon ios="ios-pin" md="md-pin" color="danger"></ion-icon>
+        {{'makaHotels.location' |translate}}
+      </p>
+      <rating [(ngModel)]="rate" emptyStarIconName="star" max="5" readOnly="true" (ngModelChange)="changeRating($event)" halfStarIconName="star"></rating>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="md-restaurant" item-start color="primary"></ion-icon>
+          <ion-label>{{'makaHotels.meal' |translate}}</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="md-calendar" item-start color="primary"></ion-icon>
+          <ion-label>{{'makaHotels.date' |translate}}</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="md-time" item-start color="primary"></ion-icon>
+          <ion-label>{{'makaHotels.days' |translate}}</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="md-cloudy-night" item-start color="primary"></ion-icon>
+          <ion-label>{{'makaHotels.room' |translate}}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-col>
+  </ion-row>
 
 </ion-content>

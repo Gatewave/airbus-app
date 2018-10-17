@@ -26,7 +26,7 @@
       <span>{{'packageDetail.trip.place'| translate}}</span>
       <span>{{'packageDetail.trip.cost'| translate}}</span>
     </p>
-    <rating [(ngModel)]="rate" max="5" halfStarIconName="star-half" (ngModelChange)="onModelChange($event)"></rating>
+    <rating [(ngModel)]="rate" emptyStarIconName="star" max="5" readOnly="true" (ngModelChange)="changeRating($event)" halfStarIconName="star"></rating>
   </div>
 </ion-header>
 
@@ -114,24 +114,16 @@
         </ion-card-content>
 
         <ion-row no-padding>
-          <ion-col>
-            <button ion-button clear small color="danger" icon-start>
-              <ion-icon ios="ios-heart" md="md-heart"></ion-icon>
-              اعجاب
-            </button>
-          </ion-col>
+
+
           <ion-col text-center>
-            <button ion-button clear small  color="danger" icon-start>
+            <button ion-button block full (click)="HotelsMaka()" color="danger" icon-start>
               <ion-icon ios="ios-document" md="md-document"></ion-icon>
               اقراء المزيد
             </button>
           </ion-col>
-          <ion-col text-right>
-            <button ion-button clear small color="danger" icon-start>
-              <ion-icon name='share-alt'></ion-icon>
-              مشاركه
-            </button>
-          </ion-col>
+
+
         </ion-row>
 
       </ion-card>
@@ -146,24 +138,14 @@
         </ion-card-content>
 
         <ion-row no-padding>
-          <ion-col>
-            <button ion-button clear small color="danger" icon-start>
-              <ion-icon ios="ios-heart" md="md-heart"></ion-icon>
-              اعجاب
-            </button>
-          </ion-col>
+
           <ion-col text-center>
-            <button ion-button clear small   color="danger" icon-start>
+            <button ion-button  block full (click)="HotelsMadina()" color="danger" icon-start>
               <ion-icon ios="ios-document" md="md-document"></ion-icon>
               اقراء المزيد
             </button>
           </ion-col>
-          <ion-col text-right>
-            <button ion-button clear small color="danger" icon-start>
-              <ion-icon name='share-alt'></ion-icon>
-              مشاركه
-            </button>
-          </ion-col>
+
         </ion-row>
 
       </ion-card>

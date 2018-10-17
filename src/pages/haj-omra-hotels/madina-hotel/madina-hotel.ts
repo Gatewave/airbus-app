@@ -1,5 +1,8 @@
 import {Component, ViewChild} from '@angular/core';
 import {IonicPage, NavController, NavParams, Slides} from 'ionic-angular';
+import { Ionic2RatingModule } from "ionic2-rating";
+// import event = google.maps.event;
+
 
 /**
  * Generated class for the MadinaHotelPage page.
@@ -17,7 +20,7 @@ export class MadinaHotelPage {
 
     @ViewChild(Slides) slides: Slides;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public rating:Ionic2RatingModule) {
   }
 
     ngAfterViewInit() {
@@ -27,5 +30,9 @@ export class MadinaHotelPage {
         this.slides.paginationType ="progress";
         this.slides.dir = "_ltr"
     }
+    changeRating(event)
+    {
+        this.rating=event.value;
 
+    }
 }

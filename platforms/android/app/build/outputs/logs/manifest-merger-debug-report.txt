@@ -11,19 +11,19 @@ INJECTED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/ma
 INJECTED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:2:1-17:12
 INJECTED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:2:1-17:12
 	package
-		ADDED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:2:98-126
+		ADDED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:2:102-130
 		INJECTED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml
 		INJECTED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml
 	android:versionName
-		ADDED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:2:70-97
+		ADDED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:2:74-101
 		INJECTED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml
 		INJECTED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml
 	android:hardwareAccelerated
 		ADDED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:2:11-45
 	xmlns:android
-		ADDED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:2:127-185
+		ADDED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:2:131-189
 	android:versionCode
-		ADDED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:2:46-69
+		ADDED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:2:46-73
 		INJECTED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml
 		INJECTED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml
 supports-screens

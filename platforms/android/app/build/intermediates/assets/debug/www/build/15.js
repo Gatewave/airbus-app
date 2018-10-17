@@ -1,14 +1,14 @@
 webpackJsonp([15],{
 
-/***/ 755:
+/***/ 760:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CallPageModule", function() { return CallPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__call__ = __webpack_require__(182);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GalleryDetailsPageModule", function() { return GalleryDetailsPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gallery__ = __webpack_require__(186);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var CallPageModule = /** @class */ (function () {
-    function CallPageModule() {
+var GalleryDetailsPageModule = /** @class */ (function () {
+    function GalleryDetailsPageModule() {
     }
-    CallPageModule = __decorate([
+    GalleryDetailsPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__call__["a" /* CallPage */],
+                __WEBPACK_IMPORTED_MODULE_2__gallery__["a" /* GalleryPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__call__["a" /* CallPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__gallery__["a" /* GalleryPage */]),
             ],
         })
-    ], CallPageModule);
-    return CallPageModule;
+    ], GalleryDetailsPageModule);
+    return GalleryDetailsPageModule;
 }());
 
-//# sourceMappingURL=call.module.js.map
+//# sourceMappingURL=gallery.module.js.map
 
 /***/ })
 

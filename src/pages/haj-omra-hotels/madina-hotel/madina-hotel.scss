@@ -10,22 +10,73 @@ page-madina-hotel {
       top: initial !important;
       position: absolute;
     }
-    ion-slides {
-      .swiper-pagination-progress .swiper-pagination-progressbar {
-        background: color($colors, danger) !important;
-      }
-      height: 150px !important;
-      ion-slide {
-        width: 100% !important;
-        height: 160px !important;
-
-        img {
+    ion-row {
+      ion-slides {
+        .swiper-pagination-progress .swiper-pagination-progressbar {
+          background: color($colors, danger) !important;
+        }
+        height: 150px !important;
+        ion-slide {
           width: 100% !important;
           height: 160px !important;
+
+          img {
+            width: 100% !important;
+            height: 160px !important;
+          }
         }
       }
+      ion-col[col-12] {
+        h2 {
+          padding-right: 16px;
+        }
+        p {
+          padding-right: 16px;
+
+        }
+        rating {
+          ul {
+            padding: 0;
+            padding-right: 20px;
+
+            z-index: 9999;
+            position: initial;
+            margin: 0;
+
+            &.rating li {
+              padding: 4px !important;
+              background: none;
+              color: #ffb400;
+
+              ion-icon {
+                font-size: 1.4em;
+              }
+            }
+          }
+        }
+        .item-md {
+          background: transparent !important;
+        }
+        .item-ios{
+          background: transparent !important;
+        }
+        .list-ios > .item-block:first-child {
+          border-top: none;
+        }
+        .item-inner {
+          margin-right: 0 !important;
+        }
+        .list-md .item-block .item-inner {
+          border-bottom: 1px solid color($colors, overlay) !important;
+        }
+        ion-list {
+          ion-item {
+
+          }
+        }
+      }
+
     }
-  }
-
 
   }
+}

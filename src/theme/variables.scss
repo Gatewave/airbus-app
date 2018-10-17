@@ -99,9 +99,27 @@ $item-ios-detail-push-color:color($colors,dark);
 
 //Bar Button And Inputs
 .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default{color: color($colors,light) !important;}
+.bar-button-default-ios, .bar-button-clear-ios-default, .bar-button-ios-default{color: color($colors,light) !important;}
 $text-input-md-highlight-color: transparent;
 $text-input-placeholder-color:color($colors,danger);
 
+//Action Sheet styles
+$action-sheet-ios-group-margin-bottom: 0 !important;
+
+//Action Sheet styles
+$action-sheet-ios-group-margin-bottom: 0 !important;
+$action-sheet-ios-border-radius:20px !important;
+.action-sheet-ios .action-sheet-group:last-child{
+  overflow: hidden !important;
+}
+//$toolbar-ios-height:80px !important;
+$toolbar-ios-height:60px !important;
+.toolbar-ios ion-title{
+  position: relative !important;
+}
+.toolbar-title-ios{
+  overflow: visible!important;
+}
 
 
 // Ionicons

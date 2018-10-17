@@ -1,30 +1,33 @@
 
 <ion-header>
-
   <ion-navbar>
-    <ion-title>profile</ion-title>
+    <ion-title text-center>حسابى</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
-<ion-content padding>
+<ion-content #popoverContent >
 
-  <ion-item>
-    <ion-label floating> UserName :</ion-label>
-    <ion-input [(ngModel)]="profile.username"></ion-input>
-  </ion-item>
+  <div #popoverText margin-top margin-bottom>
+   <ion-row>
+     <ion-col col-12>
+       <ion-list>
+         <ion-item>
+           <ion-icon name="md-person" item-start color="primary"></ion-icon>
+           <ion-label> Mohamed </ion-label>
+         </ion-item>
 
-  <ion-item>
-    <ion-label floating> FirstName :</ion-label>
-    <ion-input [(ngModel)]="profile.firstName"></ion-input>
-  </ion-item>
+         <ion-item>
+           <ion-icon name="md-mail" item-start color="primary"></ion-icon>
+           <ion-label>Mohamed@gate.com</ion-label>
+         </ion-item>
 
-  <ion-item>
-    <ion-label floating> LastName :</ion-label>
-    <ion-input [(ngModel)]="profile.lastName"></ion-input>
-  </ion-item>
-
-  <button ion-button round (click)="createProfile()"> Create Profile</button>
-
+         <ion-item>
+           <ion-icon name="md-call" item-start color="primary"></ion-icon>
+           <ion-label>(+02) 111 333 44</ion-label>
+         </ion-item>
+       </ion-list>
+     </ion-col>
+   </ion-row>
+  </div>
 </ion-content>

@@ -3,13 +3,16 @@ page-home {
     background: url("../../assets/imgs/bg-home.jpg") no-repeat no-repeat top left !important;
     background-size: cover !important;
     height: 100vh !important;
+
     ion-content {
+
         background: transparent !important;
         .swiper-container-horizontal > .swiper-pagination-progress {
             bottom: 0 !important;
             top: initial !important;
             position: absolute;
         }
+
         ion-row {
             ion-slides {
                 .swiper-pagination-progress .swiper-pagination-progressbar {
@@ -56,25 +59,31 @@ page-home {
             }
             ion-col[col-12] {
                 div[id="news"] {
-                    $app-direction:multi;
                     margin-top: 35px !important;
 
                     p {
-                        color: color($colors, light);
-                        background-color:color($colors, secondary);
+                        width: 100%;
+                        color: #f0f0f0;
+                        background-color: #555;
                         border-top-left-radius: 25px;
                         border-top-right-radius: 25px;
                         border-bottom-left-radius: 25px;
                         margin: 0;
                         border-bottom-right-radius: 25px;
-                        padding: 17px 0 17px 15px;
+                        line-height: 60px;
+                        position: relative;
+                        height: 60px;
+                        $app-direction:multi !important;
                         span {
                             color: color($colors, light);
                             background-color:color($colors, danger);
-                            padding: 17px 10px;
+                            padding: 0 10px;
                             border-top-right-radius: 25px;
                             border-bottom-right-radius: 25px;
                             margin: 0 0 0 10px;
+                            $app-direction:multi !important;
+                            position: absolute;
+                            z-index: 5;
                         }
 
                     }
@@ -87,4 +96,5 @@ page-home {
         background-size: cover !important;
         height: 11Vh;
     }
+
 }

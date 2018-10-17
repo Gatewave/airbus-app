@@ -25,7 +25,6 @@ import { PopoverController } from 'ionic-angular';
 export class HomePage {
 
     @ViewChild(Slides) slides: Slides;
-
     // profileData:FirebaseObjectObservable<Profile>
 
     constructor(public navCtrl: NavController,
@@ -34,7 +33,7 @@ export class HomePage {
                 private callNumber: CallNumber,
                 private afAuth : AngularFireAuth,
                 public toast: ToastController,
-                public popoverCtrl: PopoverController
+                public popoverCtrl: PopoverController,
     ) {
 
     }
@@ -97,12 +96,11 @@ export class HomePage {
     hotels(){
         this.navCtrl.setRoot(HotelsPage);
     }
-    presentPopover(myEvent){
-        let popover = this.popoverCtrl.create(ProfilePage);
+
+    presentRadioPopover(ev: UIEvent) {
+        let popover = this.popoverCtrl.create(ProfilePage, {},{cssClass: 'hamada'});
         popover.present({
-            ev: myEvent
-        })
+            ev: ev
+        });
     }
-
-
 }

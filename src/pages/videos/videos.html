@@ -5,7 +5,7 @@
     </button>
     <ion-title text-center>{{'videos.title' | translate}}</ion-title>
 
-    <ion-buttons start>
+    <ion-buttons end>
       <button ion-button icon-only (click)="backHome()">
         <ion-icon name="md-arrow-forward"></ion-icon>
       </button>
@@ -43,12 +43,12 @@
           {{tap}} {{'videos.like'| translate}}
         </button>
       </ion-col>
-      <ion-col>
-        <button ion-button color="primary" clear small icon-start>
-          <ion-icon name='text'></ion-icon>
-          {{tap}} {{'videos.comment'| translate}}
-        </button>
-      </ion-col>
+      <!--<ion-col>-->
+        <!--<button ion-button color="primary" clear small icon-start>-->
+          <!--<ion-icon name='text'></ion-icon>-->
+           <!--{{'videos.comment'| translate}}-->
+        <!--</button>-->
+      <!--</ion-col>-->
       <ion-col align-self-center text-center>
         <ion-note>
           11h ago
@@ -84,12 +84,7 @@
           {{tap}} {{'videos.like'| translate}}
         </button>
       </ion-col>
-      <ion-col>
-        <button ion-button color="primary" clear small icon-start>
-          <ion-icon name='text'></ion-icon>
-          {{tap}} {{'videos.comment'| translate}}
-        </button>
-      </ion-col>
+
       <ion-col align-self-center text-center>
         <ion-note>
           30yr ago
@@ -125,12 +120,7 @@
           {{tap}}  {{'videos.like'| translate}}
         </button>
       </ion-col>
-      <ion-col>
-        <button ion-button color="primary" clear small icon-start>
-          <ion-icon name='text'></ion-icon>
-          {{tap}}   {{'videos.comment'| translate}}
-        </button>
-      </ion-col>
+
       <ion-col align-self-center text-center>
         <ion-note>
           2d ago

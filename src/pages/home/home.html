@@ -2,29 +2,29 @@
 
   <ion-navbar>
     <button ion-button menuToggle >
-      <ion-icon name="menu"></ion-icon>
+      <ion-icon ios="ios-menu" name="menu"></ion-icon>
     </button>
 
     <ion-title text-center> {{ 'main.title' | translate }} </ion-title>
 
-    <ion-buttons start>
-      <button ion-button icon-only (click)="presentPopover()">
+    <ion-buttons end>
+      <button ion-button icon-only (click)="presentRadioPopover($event) ">
         <ion-icon name="ios-contact"></ion-icon>
       </button>
     </ion-buttons>
 
-    <ion-buttons start>
-      <button ion-button icon-only (click)="changeLanguage()">
-        <ion-icon name="md-globe"></ion-icon>
-      </button>
-    </ion-buttons>
+    <!--<ion-buttons end>-->
+      <!--<button ion-button icon-only (click)="changeLanguage()">-->
+        <!--<ion-icon ios="ios-globe" name="md-globe"></ion-icon>-->
+      <!--</button>-->
+    <!--</ion-buttons>-->
 
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content>
+<ion-content >
   <ion-row>
     <ion-slides #slides dir="rtl" [pager]="true" loop="true" onload="startAutoplay()" style="background-color: black">
       <ion-slide *ngFor="let image of [1,2,3,4,5]">
@@ -79,7 +79,7 @@
 
     <ion-col col-4>
       <ion-card (click)="hotels()">
-        <ion-icon  md="md-home"></ion-icon>
+        <ion-icon ios="ios-home" md="md-home"></ion-icon>
         <div class="card-title"> {{ 'main.tabs.hotels' | translate }} </div>
       </ion-card>
     </ion-col>
@@ -89,7 +89,7 @@
 
         <p>
           <span>{{ 'main.news' | translate }}</span>
-          {{ 'main.news-details' | translate }}
+          <marquee  direction="right" scrolldelay="130">{{ 'main.news-details' | translate }}</marquee>
         </p>
       </div>
       <!--<p>user : {{(profileData | async)?.username}}</p>-->

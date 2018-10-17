@@ -23,6 +23,9 @@
       "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+",
       "PACKAGE_NAME": "com.ionic.HandFuss"
     },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.ionic.HandFuss"
+    },
     "cordova-plugin-statusbar": {
       "PACKAGE_NAME": "com.ionic.HandFuss"
     },

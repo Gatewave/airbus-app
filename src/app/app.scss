@@ -17,6 +17,7 @@
 * {
   $app-direction:multi;
 }
+
 .avatar{
   margin: auto;
 }
@@ -29,12 +30,23 @@ ion-content{
     font-family: 'Cairo', sans-serif !important;
   }
   ion-avatar{
-    img{display: inline-block}
+    img{
+      display: inline-block;
+      margin-top: 15px;
+    }
   }
 }
 
-
 #list_color {
+  .label-md {
+    margin: 3px 0 3px 8px !important;
+  }
+  .label-ios {
+    margin: 3px 0 3px 8px !important;
+  }
+  .list-ios > .item-block:first-child{
+    border-top: none!important;
+  }
   background-color: color($colors, light) !important;
   button {
     font-family: 'Cairo', sans-serif !important;

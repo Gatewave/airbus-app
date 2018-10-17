@@ -31,7 +31,7 @@ page-signin {
       ion-col[col-12]{
         ion-list{
           .text-input{margin: 0 !important;}
-          ion-item{
+          ion-item,.item-ios{
             border-radius: 20px;
             box-shadow: 1px 1px 1px rgba(86,86,86,0.56) !important;
             font-size: 1.0em !important;

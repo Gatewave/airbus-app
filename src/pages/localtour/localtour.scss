@@ -3,6 +3,12 @@ page-localtour {
   background: url("../../assets/imgs/bg-home.jpg") no-repeat no-repeat top left !important;
   background-size: cover !important;
   height: 100vh !important;
+  .searchbar-md .searchbar-input {
+    text-align: right !important;
+  }
+  .searchbar-ios .searchbar-input {
+    text-align: right !important;
+  }
   ion-content {
     background: transparent !important;
 

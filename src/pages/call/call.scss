@@ -8,10 +8,14 @@ page-call {
     ion-row {
       ion-col[col-12] {
         ion-card{
-          background: transparent !important;
+          background: color($colors,white) !important;
           border-radius: 8px;
           border:1px solid color($colors, dark);
-
+          .list-ios > .item-block:first-child{border-top:none!important;}
+          .list-ios > .item-block:last-child{ border-bottom: none!important;}
+          .card-header-ios,.card-header-md{padding-bottom: 0!important;padding-top: 11px!important;font-weight: bold}
+          .card-content-ios,.card-content-md{padding: 0!important;}
+          .label-ios,.label-md{margin-bottom: 0!important;margin-top: 0!important;}
           ion-card-header{
             padding: 0 16px;
           }
@@ -27,6 +31,12 @@ page-call {
                 padding-right: 0;
                 ion-label{
                   margin: 0;
+                  h5{
+                    font-weight: 400;
+                  }
+                }
+                ion-label:last-child{
+                  padding-bottom: 11px !important;
                 }
               }
             }

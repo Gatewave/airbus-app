@@ -27,6 +27,4 @@ export class MakaHotelPage {
         this.slides.paginationType ="progress";
         this.slides.dir = "_ltr"
     }
-
-
 }
