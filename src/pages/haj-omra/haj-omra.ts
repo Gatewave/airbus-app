@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {PackageDetailsPage} from "../package-details/package-details";
-import {HomePage} from "../home/home";
+
 
 /**
  * Generated class for the HajOmraPage page.
@@ -56,10 +55,10 @@ export class HajOmraPage {
     }
 
     packageDetails(){
-      this.navCtrl.push(PackageDetailsPage);
+      this.navCtrl.push('PackageDetailsPage');
     }
     backHome(){
-        this.navCtrl.setRoot(HomePage)
+        this.navCtrl.setRoot('HomePage')
     }
 
     filterItems(ev: any) {

@@ -1,7 +1,6 @@
 import {Component, ViewChild} from '@angular/core';
 import {AlertController, IonicPage, NavController, NavParams, Slides} from 'ionic-angular';
-import {MadinaHotelPage} from "../haj-omra-hotels/madina-hotel/madina-hotel";
-import {MakaHotelPage} from "../haj-omra-hotels/maka-hotel/maka-hotel";
+
 
 
 @IonicPage()
@@ -40,10 +39,10 @@ export class PackageDetailsPage {
 
   }
     HotelsMaka() {
-        this.navCtrl.push(MakaHotelPage);
+        this.navCtrl.push('MakaHotelPage');
     }
     HotelsMadina() {
-        this.navCtrl.push(MadinaHotelPage);
+        this.navCtrl.push('MadinaHotelPage');
     }
 
 

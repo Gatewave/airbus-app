@@ -1,6 +1,5 @@
 import {Component, ViewChild} from '@angular/core';
 import {IonicPage, NavController, NavParams, Slides, LoadingController} from 'ionic-angular';
-import {HomePage} from "../home/home";
 
 /**
  * Generated class for the TransportaionPage page.
@@ -35,7 +34,7 @@ export class TransportaionPage {
         this.slides.slidePrev(500, true);
     }
     backHome(){
-    this.navCtrl.setRoot(HomePage)
+    this.navCtrl.setRoot('HomePage')
     }
     presentLoading() {
         const loader = this.loadingCtrl.create({
@@ -43,6 +42,6 @@ export class TransportaionPage {
             duration: 3000
         });
         loader.present();
-        this.navCtrl.setRoot(HomePage)
+        this.navCtrl.setRoot('HomePage')
     }
 }

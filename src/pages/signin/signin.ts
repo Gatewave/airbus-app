@@ -1,14 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController,ModalController} from 'ionic-angular';
-import {HomePage} from "../home/home";
-import {ForgetpassPage} from "../forgetpass/forgetpass";
-import {NewuserPage} from "../newuser/newuser";
 import {User} from '../../Models/user';
 import {AngularFireAuth} from 'angularfire2/auth'
-import firebase from 'firebase';
-// import {ProfilePage} from "../profile/profile";
-
-
+import * as firebase from 'firebase/app';
 
 
 @IonicPage()
@@ -42,14 +36,14 @@ export class SigninPage {
         setTimeout(() => {
             loading.dismiss();
         }, 3000);
-        this.navCtrl.setRoot(HomePage);
+        this.navCtrl.setRoot('HomePage');
     }
 
     async login(user:User) {
         try {
             const result = this.afAuth.auth.signInWithEmailAndPassword(user.email, user.password);
             if(result){
-                this.navCtrl.setRoot(HomePage);
+                this.navCtrl.setRoot('HomePage');
             }
         }
         catch (e) {
@@ -62,7 +56,7 @@ export class SigninPage {
         try{
        const face = this.afAuth.auth.signInWithPopup(new firebase.auth.FacebookAuthProvider());
        if(face){
-           this.navCtrl.setRoot(HomePage);
+           this.navCtrl.setRoot('HomePage');
              }
         }
         catch (e) {
@@ -73,12 +67,12 @@ export class SigninPage {
 
 
     newuser(){
-        this.navCtrl.push(NewuserPage);
+        this.navCtrl.push('NewuserPage');
     }
 
 
     forget(){
-        this.navCtrl.push(ForgetpassPage);
+        this.navCtrl.push('ForgetpassPage');
     }
 
 

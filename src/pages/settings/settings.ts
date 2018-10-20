@@ -1,16 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {LanguageProvider} from "../../providers/language/language";
-import {TermsPage} from "../terms/terms";
-import {HomePage} from "../home/home";
 
 
-/**
- * Generated class for the SettingsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+
 
 @IonicPage()
 @Component({
@@ -28,9 +21,9 @@ export class SettingsPage {
     }
 
     terms(){
-        this.navCtrl.setRoot(TermsPage);
+        this.navCtrl.setRoot('TermsPage');
   }
     backHome(){
-        this.navCtrl.setRoot(HomePage)
+        this.navCtrl.setRoot('HomePage')
     }
 }

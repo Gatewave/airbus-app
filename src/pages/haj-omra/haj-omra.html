@@ -24,7 +24,7 @@
   </ion-refresher>
 
   <ion-card *ngFor="let HajOmraList of HajOmraList" (click)="packageDetails()">
-    <img animates #animation6="animates" [src]="HajOmraList.image"/>
+    <img [src]="HajOmraList.image"/>
     <div class="card-title">
 <span [innerHTML]="HajOmraList.title"></span>
       <rating [(ngModel)]="rate" emptyStarIconName="star" max="5" readOnly="true" (ngModelChange)="changeRating($event)" halfStarIconName="star"></rating>

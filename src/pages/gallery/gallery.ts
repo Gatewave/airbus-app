@@ -1,8 +1,6 @@
 import {Component, ViewChild} from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AnimationService, AnimationBuilder } from 'css-animator';
-import {HomePage} from "../home/home";
-import {GalleryDetailsPage} from "../gallery-details/gallery-details";
 
 
 
@@ -38,10 +36,10 @@ export class GalleryPage {
     }
 
     openIt(){
-      this.navCtrl.push(GalleryDetailsPage)
+      this.navCtrl.push('GalleryDetailsPage')
     }
 
     backHome(){
-        this.navCtrl.setRoot(HomePage)
+        this.navCtrl.setRoot('HomePage')
     }
 }

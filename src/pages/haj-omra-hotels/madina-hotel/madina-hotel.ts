@@ -1,7 +1,5 @@
 import {Component, ViewChild} from '@angular/core';
 import {IonicPage, NavController, NavParams, Slides} from 'ionic-angular';
-import { Ionic2RatingModule } from "ionic2-rating";
-// import event = google.maps.event;
 
 
 /**
@@ -20,19 +18,16 @@ export class MadinaHotelPage {
 
     @ViewChild(Slides) slides: Slides;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public rating:Ionic2RatingModule) {
-  }
+    constructor(public navCtrl: NavController, public navParams: NavParams) {
+    }
 
     ngAfterViewInit() {
         this.slides.autoplay = 2000;
         // this.slides.autoplayDisableOnInteraction = false;
         this.slides.pager = false;
-        this.slides.paginationType ="progress";
+        this.slides.paginationType = "progress";
         this.slides.dir = "_ltr"
     }
-    changeRating(event)
-    {
-        this.rating=event.value;
 
-    }
+
 }

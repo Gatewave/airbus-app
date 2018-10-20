@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {HomePage} from "../home/home";
 
 /**
  * Generated class for the AboutusPage page.
@@ -31,6 +30,6 @@ export class AboutusPage {
         }, 2000);
     }
     backHome(){
-        this.navCtrl.setRoot(HomePage)
+        this.navCtrl.setRoot('HomePage')
     }
 }

@@ -1,22 +1,15 @@
 import {Component, ViewChild} from '@angular/core';
-import {NavController, NavParams, Slides, ToastController} from 'ionic-angular';
+import {IonicPage, NavController, NavParams, Slides, ToastController} from 'ionic-angular';
 import {LanguageProvider} from "../../providers/language/language";
 import 'rxjs/add/operator/map';
-import {HajOmraPage} from "../haj-omra/haj-omra";
-import {LocaltourPage} from "../localtour/localtour";
-import {InterntourPage} from "../interntour/interntour";
-import {TransportaionPage} from "../transportaion/transportaion";
-import {TicketsPage} from "../tickets/tickets";
-import {HotelsPage} from "../hotels/hotels";
 import { CallNumber } from '@ionic-native/call-number';
 import {AngularFireAuth} from 'angularfire2/auth';
-import {ProfilePage} from "../profile/profile";
-import { PopoverController } from 'ionic-angular';
+import { PopoverController, Platform } from 'ionic-angular';
 
 
 
 
-
+@IonicPage()
 @Component({
     selector: 'page-home',
     templateUrl: 'home.html',
@@ -30,10 +23,11 @@ export class HomePage {
     constructor(public navCtrl: NavController,
                 public navParams: NavParams,
                 public lang:LanguageProvider,
-                private callNumber: CallNumber,
+                private called: CallNumber,
                 private afAuth : AngularFireAuth,
                 public toast: ToastController,
                 public popoverCtrl: PopoverController,
+                public platform: Platform,
     ) {
 
     }
@@ -57,10 +51,15 @@ export class HomePage {
     }
 
 // Function To call Air Bus Number
-    call(){
-        this.callNumber.callNumber("18001010101", true)
-            .then(res => console.log('Launched dialer!', res))
-            .catch(err => console.log('Error launching dialer', err));
+    async call() {
+        await this.platform.ready();
+        try {
+            await this.called.callNumber("18001010101", true)
+            console.log('Launched dialer!');
+        }
+        catch (e) {
+            console.log(e || 'Error launching dialer');
+        }
     }
 
 
@@ -79,26 +78,26 @@ export class HomePage {
 
     //page jump
     haj(){
-        this.navCtrl.setRoot(HajOmraPage);
+        this.navCtrl.setRoot('HajOmraPage');
     }
     localtour(){
-        this.navCtrl.setRoot(LocaltourPage);
+        this.navCtrl.setRoot('LocaltourPage');
     }
     interntour(){
-        this.navCtrl.setRoot(InterntourPage);
+        this.navCtrl.setRoot('InterntourPage');
     }
     transportaion(){
-        this.navCtrl.setRoot(TransportaionPage);
+        this.navCtrl.setRoot('TransportaionPage');
     }
     tickets(){
-        this.navCtrl.setRoot(TicketsPage);
+        this.navCtrl.setRoot('TicketsPage');
     }
     hotels(){
-        this.navCtrl.setRoot(HotelsPage);
+        this.navCtrl.setRoot('HotelsPage');
     }
 
     presentRadioPopover(ev: UIEvent) {
-        let popover = this.popoverCtrl.create(ProfilePage, {},{cssClass: 'hamada'});
+        let popover = this.popoverCtrl.create('ProfilePage', {},{cssClass: 'hamada'});
         popover.present({
             ev: ev
         });

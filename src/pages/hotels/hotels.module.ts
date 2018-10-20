@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { HotelsPage } from './hotels';
+import {HttpClient} from "@angular/common/http";
+import {TranslateHttpLoader} from "@ngx-translate/http-loader";
+import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 
 @NgModule({
   declarations: [
@@ -8,6 +11,15 @@ import { HotelsPage } from './hotels';
   ],
   imports: [
     IonicPageModule.forChild(HotelsPage),
+      TranslateModule.forChild({
+          loader: {
+              provide: TranslateLoader,
+              useFactory: (http: HttpClient) => {
+                  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+              },
+              deps: [HttpClient]
+          }
+      }),
   ],
 })
 export class HotelsPageModule {}

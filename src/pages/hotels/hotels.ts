@@ -1,6 +1,5 @@
 import {Component, ViewChild} from '@angular/core';
 import { IonicPage, NavController, NavParams,Slides, LoadingController } from 'ionic-angular';
-import {HomePage} from "../home/home";
 
 /**
  * Generated class for the HotelsPage page.
@@ -38,7 +37,7 @@ export class HotelsPage {
         this.slides.slidePrev(500, true);
     }
     backHome(){
-        this.navCtrl.setRoot(HomePage)
+        this.navCtrl.setRoot('HomePage')
     }
 
     presentLoading() {
@@ -47,6 +46,6 @@ export class HotelsPage {
             duration: 3000
         });
         loader.present();
-        this.navCtrl.setRoot(HomePage)
+        this.navCtrl.setRoot('HomePage')
     }
 }

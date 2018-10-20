@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import {IonicPage, LoadingController, NavController, NavParams, ToastController} from 'ionic-angular';
-import {SigninPage} from '../signin/signin';
-// import { HomePage } from '../home/home';
 import {AngularFireAuth} from 'angularfire2/auth';
 import {AngularFireDatabase} from 'angularfire2/database';
 import {Profile} from "../../Models/profile";
@@ -61,7 +59,7 @@ export class NewuserPage {
             console.error(result);
             this.afAuth.authState.take(1).subscribe(auth => {
                 this.afDatabase.object(` profile/${auth.uid} `).set(this.profile)
-                    .then(() => this.navCtrl.setRoot(SigninPage));
+                    .then(() => this.navCtrl.setRoot('SigninPage'));
             })
 
         }
