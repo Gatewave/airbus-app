@@ -15,7 +15,6 @@
     </ion-col>
 
     <ion-col col-12>
-
       <ion-list>
         <ion-item margin-bottom>
           <ion-input type="text" [(ngModel)]="profile.username"  full round dir="rtl" placeholder=" الاسم"></ion-input>
@@ -29,7 +28,7 @@
           <ion-input type="tel"  [(ngModel)]="profile.mobile" full round dir="rtl" placeholder=" رقم الهاتف"></ion-input>
         </ion-item>
 
-        <ion-item margin-bottom>
+        <ion-item  margin-bottom>
           <ion-input type="password" [(ngModel)]="user.password" full round dir="rtl" placeholder="الرقم السرى"></ion-input>
         </ion-item>
 
@@ -37,6 +36,7 @@
           <ion-input type="password" [(ngModel)]="profile.password" full round dir="rtl" placeholder="اعادة الرقم السرى "></ion-input>
         </ion-item>
       </ion-list>
+
       <button ion-button full round (click)="register(user)">انشاء حساب جديد</button>
     </ion-col>
   </ion-row>

@@ -1,17 +1,17 @@
 webpackJsonp([9],{
 
-/***/ 745:
+/***/ 739:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VideosPageModule", function() { return VideosPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TicketsPageModule", function() { return TicketsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__videos__ = __webpack_require__(776);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(367);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_http_loader__ = __webpack_require__(368);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tickets__ = __webpack_require__(777);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(364);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_http_loader__ = __webpack_require__(365);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -24,16 +24,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var VideosPageModule = /** @class */ (function () {
-    function VideosPageModule() {
+var TicketsPageModule = /** @class */ (function () {
+    function TicketsPageModule() {
     }
-    VideosPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+    TicketsPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__videos__["a" /* VideosPage */],
+                __WEBPACK_IMPORTED_MODULE_2__tickets__["a" /* TicketsPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__videos__["a" /* VideosPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__tickets__["a" /* TicketsPage */]),
                 __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateModule */].forChild({
                     loader: {
                         provide: __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["a" /* TranslateLoader */],
@@ -42,22 +42,22 @@ var VideosPageModule = /** @class */ (function () {
                         },
                         deps: [__WEBPACK_IMPORTED_MODULE_4__angular_common_http__["a" /* HttpClient */]]
                     }
-                })
+                }),
             ],
         })
-    ], VideosPageModule);
-    return VideosPageModule;
+    ], TicketsPageModule);
+    return TicketsPageModule;
 }());
 
-//# sourceMappingURL=videos.module.js.map
+//# sourceMappingURL=tickets.module.js.map
 
 /***/ }),
 
-/***/ 776:
+/***/ 777:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VideosPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TicketsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(91);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -71,37 +71,57 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var VideosPage = /** @class */ (function () {
-    function VideosPage(navCtrl, navParams) {
+var TicketsPage = /** @class */ (function () {
+    function TicketsPage(navCtrl, navParams, loadingCtrl) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.tap = 0;
+        this.loadingCtrl = loadingCtrl;
+        this.slidesList = [
+            {
+                title: "خلال اير باص احجز تذاكر الطيران !",
+                description: "<b>استمتع بسهوله الحجز<b/> من خلال تطبيقنا",
+                image: "../../assets/imgs/ticket.png",
+            },
+            {
+                title: "تمتع بالسفر حول العالم..",
+                description: "أدخل بيناتك كامله ولا تنسى التاكيد شكرا",
+                image: "../../assets/imgs/03.png",
+            }
+        ];
     }
-    VideosPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad VideosPage');
+    TicketsPage.prototype.goToSlide = function () {
+        this.slides.slideNext(500, true);
     };
-    VideosPage.prototype.doRefresh = function (refresher) {
-        console.log('Begin async operation', refresher);
-        setTimeout(function () {
-            refresher.complete();
-        }, 2000);
+    TicketsPage.prototype.slideChanged = function () {
+        this.slides.slidePrev(500, true);
     };
-    VideosPage.prototype.tapEvent = function (e) {
-        this.tap++;
-    };
-    VideosPage.prototype.backHome = function () {
+    TicketsPage.prototype.backHome = function () {
         this.navCtrl.setRoot('HomePage');
     };
-    VideosPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-videos',template:/*ion-inline-start:"/Users/mohamedosman/Desktop/Airbus/airbus-app/src/pages/videos/videos.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title text-center>{{\'videos.title\' | translate}}</ion-title>\n\n    <ion-buttons end>\n      <button ion-button icon-only (click)="backHome()">\n        <ion-icon name="md-arrow-forward"></ion-icon>\n      </button>\n    </ion-buttons>\n\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="cards-bg social-cards">\n\n  <ion-refresher (ionRefresh)="doRefresh($event)">\n    <ion-refresher-content></ion-refresher-content>\n  </ion-refresher>\n  <ion-card (tap)="tapEvent($event)">\n    <ion-item>\n      <ion-avatar item-start>\n        <img src="../../assets/imgs/favicon.png">\n      </ion-avatar>\n      <h2>{{\'videos.userName\' | translate}}</h2>\n      <p>{{\'videos.postDate\'| translate}}</p>\n    </ion-item>\n\n    <video width="100%" height="100%" poster="../../assets/imgs/londonEye.jpeg"  controls="false">\n      <source src="../../assets/imgs/england.webm" type="video/webm">\n    </video>\n\n    <ion-card-content>\n      <p>{{\'videos.description\'| translate}}</p>\n    </ion-card-content>\n\n    <ion-row>\n      <ion-col>\n        <button ion-button color="primary" clear small icon-start>\n          <ion-icon name=\'thumbs-up\'></ion-icon>\n          {{tap}} {{\'videos.like\'| translate}}\n        </button>\n      </ion-col>\n      <!--<ion-col>-->\n        <!--<button ion-button color="primary" clear small icon-start>-->\n          <!--<ion-icon name=\'text\'></ion-icon>-->\n           <!--{{\'videos.comment\'| translate}}-->\n        <!--</button>-->\n      <!--</ion-col>-->\n      <ion-col align-self-center text-center>\n        <ion-note>\n          11h ago\n        </ion-note>\n      </ion-col>\n    </ion-row>\n\n  </ion-card>\n\n\n  <ion-card (tap)="tapEvent($event)">\n\n    <ion-item>\n      <ion-avatar item-start>\n        <img src="../../assets/imgs/avatar.png">\n      </ion-avatar>\n      <h2>{{\'videos.userName\' | translate}}</h2>\n      <p>{{\'videos.postDate\'| translate}}</p>\n    </ion-item>\n\n    <video width="100%" height="100%" poster="../../assets/imgs/londonEye.jpeg" controls="false">\n      <source src="../../assets/imgs/england.webm" type="video/webm">\n    </video>\n\n    <ion-card-content>\n      <p>{{\'videos.description\'| translate}}</p>\n    </ion-card-content>\n\n    <ion-row>\n      <ion-col>\n        <button ion-button color="primary" clear small icon-start>\n          <ion-icon name=\'thumbs-up\'></ion-icon>\n          {{tap}} {{\'videos.like\'| translate}}\n        </button>\n      </ion-col>\n\n      <ion-col align-self-center text-center>\n        <ion-note>\n          30yr ago\n        </ion-note>\n      </ion-col>\n    </ion-row>\n\n  </ion-card>\n\n\n  <ion-card (tap)="tapEvent($event)">\n\n    <ion-item>\n      <ion-avatar item-start>\n        <img src="../../assets/imgs/favicon.png">\n      </ion-avatar>\n      <h2>{{\'videos.userName\' | translate}}</h2>\n      <p>{{\'videos.postDate\'| translate}}</p>\n    </ion-item>\n\n    <video width="100%" height="100%" poster="../../assets/imgs/londonEye.jpeg"  controls="false">\n      <source src="../../assets/imgs/england.webm" type="video/webm">\n    </video>\n\n    <ion-card-content>\n    <p>{{\'videos.description\'| translate}}</p>\n    </ion-card-content>\n\n    <ion-row>\n      <ion-col>\n        <button ion-button color="primary" clear small icon-start>\n          <ion-icon name=\'thumbs-up\'></ion-icon>\n          {{tap}}  {{\'videos.like\'| translate}}\n        </button>\n      </ion-col>\n\n      <ion-col align-self-center text-center>\n        <ion-note>\n          2d ago\n        </ion-note>\n      </ion-col>\n    </ion-row>\n\n  </ion-card>\n\n\n</ion-content>'/*ion-inline-end:"/Users/mohamedosman/Desktop/Airbus/airbus-app/src/pages/videos/videos.html"*/,
+    TicketsPage.prototype.presentLoading = function () {
+        var loader = this.loadingCtrl.create({
+            content: "جارى حفظ الحجز",
+            duration: 3000
+        });
+        loader.present();
+        this.navCtrl.setRoot('HomePage');
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Slides */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Slides */])
+    ], TicketsPage.prototype, "slides", void 0);
+    TicketsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'page-tickets',template:/*ion-inline-start:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/tickets/tickets.html"*/'<ion-header>\n\n  <ion-navbar>\n    <button ion-button menuToggle >\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title text-center>تذاكر طيران</ion-title>\n    <ion-buttons end>\n      <button ion-button icon-only (click)="backHome()">\n        <ion-icon name="md-arrow-forward"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content class="tutorial-page">\n\n  <ion-slides pager dir="rtl">\n\n\n    <ion-slide *ngFor="let slidesList of slidesList">\n      <ion-toolbar>\n        <ion-buttons end>\n          <button ion-button (click)="goToSlide()" color="primary">التالى</button>\n        </ion-buttons>\n      </ion-toolbar>\n      <img [src]="slidesList.image" class="slide-image"/>\n      <h2 class="slide-title" [innerHTML]="slidesList.title"></h2>\n      <p [innerHTML]="slidesList.description"></p>\n\n    </ion-slide>\n\n    <ion-slide>\n      <ion-toolbar [color]="drak">\n        <ion-buttons end>\n          <button ion-button (click)="goToSlide()" color="primary">التالى</button>\n        </ion-buttons>\n        <ion-buttons float-right>\n          <button ion-button (click)="slideChanged()" color="primary">الخلف</button>\n        </ion-buttons>\n      </ion-toolbar>\n      <ion-list padding>\n        <ion-item>\n          <ion-input required placeholder="اسم العميل" type="text"></ion-input>\n        </ion-item>\n\n        <ion-item>\n          <ion-input required placeholder="أدخل بريدك الإلكتروني" type="email"></ion-input>\n        </ion-item>\n        <ion-item>\n          <ion-input required placeholder="رقم الهاتف" type="tel"></ion-input>\n        </ion-item>\n\n        <ion-item>\n          <ion-input placeholder="رقم اخر" type="tel"></ion-input>\n        </ion-item>\n\n        <ion-list radio-group [(ngModel)]="autoManufacturers">\n        <ion-item>\n          <ion-label stacked> ذهاب فقط </ion-label>\n          <ion-radio value="oneWay"></ion-radio>\n        </ion-item>\n\n        <ion-item>\n          <ion-label stacked>ذهاب و عودة</ion-label>\n          <ion-radio value="twoWay"></ion-radio>\n        </ion-item>\n\n        <ion-item>\n          <ion-label stacked>وجهات متعددة</ion-label>\n          <ion-radio value="many"></ion-radio>\n        </ion-item>\n        </ion-list>\n\n      </ion-list>\n\n    </ion-slide>\n\n    <ion-slide>\n      <ion-toolbar [color]="drak">\n        <ion-buttons end>\n          <button ion-button (click)="goToSlide()" color="primary">التالى</button>\n        </ion-buttons>\n        <ion-buttons float-right>\n          <button ion-button (click)="slideChanged()" color="primary">الخلف</button>\n        </ion-buttons>\n      </ion-toolbar>\n      <ion-list padding>\n        <ion-item>\n          <ion-label no-margin>تاريخ السفر</ion-label>\n          <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>\n        </ion-item>\n\n        <ion-item>\n          <ion-input placeholder="بلد المغادرة" type="text"></ion-input>\n        </ion-item>\n\n        <ion-item>\n          <ion-input placeholder="مدينة المغادرة" type="text"></ion-input>\n        </ion-item>\n\n        <ion-item>\n          <ion-input placeholder="بلد الوصول" type="text"></ion-input>\n        </ion-item>\n        <ion-item>\n          <ion-input placeholder="مدينة الوصول" type="text"></ion-input>\n        </ion-item>\n\n      </ion-list>\n\n    </ion-slide>\n\n    <ion-slide>\n      <ion-toolbar>\n        <ion-buttons end>\n          <button ion-button (click)="goToSlide()" color="primary">التالى</button>\n        </ion-buttons>\n        <ion-buttons float-right>\n          <button ion-button (click)="slideChanged()" color="primary">الخلف</button>\n        </ion-buttons>\n      </ion-toolbar>\n      <ion-list padding>\n\n        <ion-item>\n          <ion-label  stacked>البالغين (+12)سنة</ion-label>\n          <ion-select required [(ngModel)]="teen">\n            <ion-option value="h">Female</ion-option>\n            <ion-option value="l">Male</ion-option>\n          </ion-select>\n        </ion-item>\n\n        <ion-item>\n          <ion-label stacked>الاطفال (2-12) سنة</ion-label>\n          <ion-select [(ngModel)]="kids">\n            <ion-option value="h">Female</ion-option>\n            <ion-option value="l">Male</ion-option>\n          </ion-select>\n        </ion-item>\n\n        <ion-item>\n          <ion-label stacked>الرضع (0-2) سنة</ion-label>\n          <ion-select [(ngModel)]="babes">\n            <ion-option value="h">Female</ion-option>\n            <ion-option value="l">Male</ion-option>\n          </ion-select>\n        </ion-item>\n\n        <ion-item>\n          <ion-label stacked>الدرجة المطلوبة</ion-label>\n          <ion-select [(ngModel)]="room-kind">\n            <ion-option value="h">Female</ion-option>\n            <ion-option value="l">Male</ion-option>\n          </ion-select>\n        </ion-item>\n\n        <ion-item>\n          <ion-input required placeholder="الشركة الناقلة" type="text"></ion-input>\n        </ion-item>\n        <button ion-button full  round color="danger">احجز الرحلة</button>\n\n      </ion-list>\n    </ion-slide>\n\n    <ion-slide>\n      <ion-toolbar>\n        <ion-buttons end>\n          <button ion-button (click)="presentLoading()" color="primary">انهاء</button>\n        </ion-buttons>\n      </ion-toolbar>\n      <img src="../../assets/imgs/04.png" class="slide-image"/>\n      <h2 class="slide-title">لقد قمت بالحجز بنجاح شكرا لك</h2>\n    </ion-slide>\n\n  </ion-slides>\n\n</ion-content>'/*ion-inline-end:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/tickets/tickets.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]])
-    ], VideosPage);
-    return VideosPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* LoadingController */]])
+    ], TicketsPage);
+    return TicketsPage;
 }());
 
-//# sourceMappingURL=videos.js.map
+//# sourceMappingURL=tickets.js.map
 
 /***/ })
 

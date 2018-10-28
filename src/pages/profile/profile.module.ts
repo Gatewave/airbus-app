@@ -4,6 +4,9 @@ import { ProfilePage } from './profile';
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {HttpClient} from "@angular/common/http";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
+// import { LottieAnimationViewModule } from 'lottie-angular2';
+
+
 
 @NgModule({
   declarations: [
@@ -20,6 +23,7 @@ import {TranslateHttpLoader} from "@ngx-translate/http-loader";
               deps: [HttpClient]
           }
       })
+      // LottieAnimationViewModule.forRoot()
   ],
 })
 export class ProfilePageModule {}

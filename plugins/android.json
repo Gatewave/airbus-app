@@ -23,6 +23,9 @@
       "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+",
       "PACKAGE_NAME": "com.ionic.HandFuss"
     },
+    "cordova-plugin-keyboard": {
+      "PACKAGE_NAME": "com.ionic.HandFuss"
+    },
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "com.ionic.HandFuss"
     },
@@ -30,6 +33,12 @@
       "PACKAGE_NAME": "com.ionic.HandFuss"
     },
     "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.ionic.HandFuss"
+    },
+    "mx.ferreyra.callnumber": {
+      "PACKAGE_NAME": "com.ionic.HandFuss"
+    },
+    "org.apache.cordova.plugin.cache": {
       "PACKAGE_NAME": "com.ionic.HandFuss"
     }
   },

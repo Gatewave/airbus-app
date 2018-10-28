@@ -1,5 +1,5 @@
 import {Component, ViewChild} from '@angular/core';
-import {AlertController, IonicPage, NavController, NavParams, Slides} from 'ionic-angular';
+import {AlertController, IonicPage, NavController, NavParams, Slides,ToastController} from 'ionic-angular';
 
 
 
@@ -35,7 +35,9 @@ export class PackageDetailsPage {
 
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
-              private alertCtrl: AlertController) {
+              private alertCtrl: AlertController,
+              public toastCtrl: ToastController
+  ) {
 
   }
     HotelsMaka() {
@@ -59,28 +61,34 @@ export class PackageDetailsPage {
         alert.setTitle('بيانات الحجز');
 
         alert.addInput({
-            type: 'radio',
-            label: 'احجز لنفس بينات الحساب',
-            value: 'blue',
-            checked: true
+            type: 'text',
+            value: 'الاسم :',
         });
 
         alert.addInput({
-            type: 'radio',
-            label: 'احجز لبينات حساب اخر',
-            value: 'green'
+            type: 'tel',
+            value: 'الهاتف :'
+        });
+        alert.addInput({
+            type: 'mail',
+            value: 'البريد الالكترونى :'
         });
 
 
-        // alert.addButton('Cancel');
         alert.addButton({
-            text: 'التالى',
-            cssClass:'ion-button',
+            text: 'أحجز',
+            cssClass:'ion-button danger',
             handler: (data: any) => {
-                console.log('Radio data:', data);
-                this.testRadioOpen = false;
                 this.testRadioResult = data;
+                let toast = this.toastCtrl.create({
+                    message: 'لقد قمت بالحجز شكرا',
+                    duration: 6000,
+                    position:'top'
+                });
+                // this.navCtrl.push('HomePage');
+                toast.present(toast);
             }
+
         });
 
         alert.present();

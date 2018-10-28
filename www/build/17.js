@@ -1,6 +1,6 @@
 webpackJsonp([17],{
 
-/***/ 733:
+/***/ 726:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,10 +8,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomePageModule", function() { return HomePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home__ = __webpack_require__(765);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(367);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_http_loader__ = __webpack_require__(368);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home__ = __webpack_require__(758);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(364);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_http_loader__ = __webpack_require__(365);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -28,7 +28,7 @@ var HomePageModule = /** @class */ (function () {
     function HomePageModule() {
     }
     HomePageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_2__home__["a" /* HomePage */],
             ],
@@ -53,18 +53,18 @@ var HomePageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 765:
+/***/ 758:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_language_language__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_language_language__ = __webpack_require__(164);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(93);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_call_number__ = __webpack_require__(376);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angularfire2_auth__ = __webpack_require__(369);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_call_number__ = __webpack_require__(368);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angularfire2_auth__ = __webpack_require__(366);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angularfire2_auth___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_angularfire2_auth__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -209,17 +209,23 @@ var HomePage = /** @class */ (function () {
         });
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Slides */]),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Slides */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Slides */]) === "function" && _a || Object)
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Slides */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Slides */])
     ], HomePage.prototype, "slides", void 0);
     HomePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/mohamedosman/Desktop/Airbus/airbus-app/src/pages/home/home.html"*/'<ion-header>\n\n  <ion-navbar>\n    <button ion-button menuToggle >\n      <ion-icon ios="ios-menu" name="menu"></ion-icon>\n    </button>\n\n    <ion-title text-center> {{ \'main.title\' | translate }} </ion-title>\n\n    <ion-buttons end>\n      <button ion-button icon-only (click)="presentRadioPopover($event) ">\n        <ion-icon name="ios-contact"></ion-icon>\n      </button>\n    </ion-buttons>\n\n    <!--<ion-buttons end>-->\n      <!--<button ion-button icon-only (click)="changeLanguage()">-->\n        <!--<ion-icon ios="ios-globe" name="md-globe"></ion-icon>-->\n      <!--</button>-->\n    <!--</ion-buttons>-->\n\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content >\n  <ion-row>\n    <ion-slides #slides dir="rtl" [pager]="true" loop="true" onload="startAutoplay()" style="background-color: black">\n      <ion-slide *ngFor="let image of [1,2,3,4,5]">\n        <img height="50%" data-src="../assets/imgs/slide{{image}}.jpg">\n      </ion-slide>\n    </ion-slides>\n  </ion-row>\n\n  <ion-row id="grid_menu">\n    <ion-col col-4>\n      <ion-card (click)="haj()">\n        <ion-icon   ios="ios-globe" md="md-globe"></ion-icon>\n        <div class="card-title"> {{ \'main.tabs.haj\' | translate }} </div>\n      </ion-card>\n    </ion-col>\n\n\n    <ion-col col-4>\n      <ion-card (click)="localtour()">\n        <ion-icon ios="ios-plane" md="md-plane"></ion-icon>\n        <div class="card-title"> {{ \'main.tabs.localtour\' | translate }} </div>\n      </ion-card>\n    </ion-col>\n\n\n    <ion-col col-4>\n      <ion-card (click)="interntour()">\n        <ion-icon ios="ios-planet" md="md-planet"></ion-icon>\n        <div class="card-title"> {{ \'main.tabs.interntour\' | translate }} </div>\n      </ion-card>\n    </ion-col>\n\n\n\n    <ion-col col-4>\n      <ion-card (click)="transportaion()">\n        <ion-icon ios="ios-bus" md="md-bus"></ion-icon>\n        <div class="card-title"> {{ \'main.tabs.transportation\' | translate }} </div>\n      </ion-card>\n    </ion-col>\n\n\n\n    <ion-col col-4>\n      <ion-card (click)="tickets()">\n        <ion-icon ios="ios-paper" md="md-paper"></ion-icon>\n        <div class="card-title"> {{ \'main.tabs.tickets\' | translate }} </div>\n      </ion-card>\n    </ion-col>\n\n\n\n    <ion-col col-4>\n      <ion-card (click)="hotels()">\n        <ion-icon ios="ios-home" md="md-home"></ion-icon>\n        <div class="card-title"> {{ \'main.tabs.hotels\' | translate }} </div>\n      </ion-card>\n    </ion-col>\n\n    <ion-col col-12 margin-top>\n      <div align-self-center id="news">\n\n        <p>\n          <span>{{ \'main.news\' | translate }}</span>\n          <marquee  direction="right" scrolldelay="130">{{ \'main.news-details\' | translate }}</marquee>\n        </p>\n      </div>\n      <!--<p>user : {{(profileData | async)?.username}}</p>-->\n      <!--<p>user: {{(profileData | async)?.firstName}}</p>-->\n      <!--<p>user: {{(profileData | async)?.lastName}}</p>-->\n    </ion-col>\n\n  </ion-row>\n</ion-content>\n\n<ion-footer>\n  <ion-fab right bottom>\n    <button ion-fab  (click)="call()" color="light">\n      <ion-icon color="danger" name="md-call"></ion-icon></button>\n  </ion-fab>\n</ion-footer>'/*ion-inline-end:"/Users/mohamedosman/Desktop/Airbus/airbus-app/src/pages/home/home.html"*/,
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'page-home',template:/*ion-inline-start:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/home/home.html"*/'<ion-header>\n\n  <ion-navbar>\n    <button ion-button menuToggle >\n      <ion-icon ios="ios-menu" name="menu"></ion-icon>\n    </button>\n\n    <ion-title text-center> {{ \'main.title\' | translate }} </ion-title>\n\n    <ion-buttons end>\n      <button ion-button icon-only (click)="presentRadioPopover($event) ">\n        <ion-icon name="ios-contact"></ion-icon>\n      </button>\n    </ion-buttons>\n\n    <!--<ion-buttons end>-->\n      <!--<button ion-button icon-only (click)="changeLanguage()">-->\n        <!--<ion-icon ios="ios-globe" name="md-globe"></ion-icon>-->\n      <!--</button>-->\n    <!--</ion-buttons>-->\n\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content >\n  <ion-row>\n    <ion-slides #slides dir="rtl" [pager]="true" loop="true" onload="startAutoplay()" style="background-color: black">\n      <ion-slide *ngFor="let image of [1,2,3,4,5]">\n        <img height="50%" data-src="../assets/imgs/slide{{image}}.jpg">\n      </ion-slide>\n    </ion-slides>\n  </ion-row>\n\n  <ion-row id="grid_menu">\n    <ion-col col-4>\n      <ion-card (click)="haj()">\n        <ion-icon   ios="ios-globe" md="md-globe"></ion-icon>\n        <div class="card-title"> {{ \'main.tabs.haj\' | translate }} </div>\n      </ion-card>\n    </ion-col>\n\n\n    <ion-col col-4>\n      <ion-card (click)="localtour()">\n        <ion-icon ios="ios-plane" md="md-plane"></ion-icon>\n        <div class="card-title"> {{ \'main.tabs.localtour\' | translate }} </div>\n      </ion-card>\n    </ion-col>\n\n\n    <ion-col col-4>\n      <ion-card (click)="interntour()">\n        <ion-icon ios="ios-planet" md="md-planet"></ion-icon>\n        <div class="card-title"> {{ \'main.tabs.interntour\' | translate }} </div>\n      </ion-card>\n    </ion-col>\n\n\n\n    <ion-col col-4>\n      <ion-card (click)="transportaion()">\n        <ion-icon ios="ios-bus" md="md-bus"></ion-icon>\n        <div class="card-title"> {{ \'main.tabs.transportation\' | translate }} </div>\n      </ion-card>\n    </ion-col>\n\n\n\n    <ion-col col-4>\n      <ion-card (click)="tickets()">\n        <ion-icon ios="ios-paper" md="md-paper"></ion-icon>\n        <div class="card-title"> {{ \'main.tabs.tickets\' | translate }} </div>\n      </ion-card>\n    </ion-col>\n\n\n\n    <ion-col col-4>\n      <ion-card (click)="hotels()">\n        <ion-icon ios="ios-home" md="md-home"></ion-icon>\n        <div class="card-title"> {{ \'main.tabs.hotels\' | translate }} </div>\n      </ion-card>\n    </ion-col>\n\n    <ion-col col-12 margin-top>\n      <div align-self-center id="news">\n\n        <p>\n          <span>{{ \'main.news\' | translate }}</span>\n          <marquee  direction="right" scrolldelay="130">{{ \'main.news-details\' | translate }}</marquee>\n        </p>\n      </div>\n      <!--<p>user : {{(profileData | async)?.username}}</p>-->\n      <!--<p>user: {{(profileData | async)?.firstName}}</p>-->\n      <!--<p>user: {{(profileData | async)?.lastName}}</p>-->\n    </ion-col>\n\n  </ion-row>\n</ion-content>\n\n<ion-footer>\n  <ion-fab right bottom>\n    <button ion-fab  (click)="call()" color="light">\n      <ion-icon color="danger" name="md-call"></ion-icon></button>\n  </ion-fab>\n</ion-footer>'/*ion-inline-end:"/home/mondo/Web/Air_bus_mobApp/AirBus/src/pages/home/home.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__providers_language_language__["a" /* LanguageProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_language_language__["a" /* LanguageProvider */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_native_call_number__["a" /* CallNumber */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_native_call_number__["a" /* CallNumber */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_5_angularfire2_auth__["AngularFireAuth"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5_angularfire2_auth__["AngularFireAuth"]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ToastController */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* PopoverController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* PopoverController */]) === "function" && _h || Object, typeof (_j = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */]) === "function" && _j || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_language_language__["a" /* LanguageProvider */],
+            __WEBPACK_IMPORTED_MODULE_4__ionic_native_call_number__["a" /* CallNumber */],
+            __WEBPACK_IMPORTED_MODULE_5_angularfire2_auth__["AngularFireAuth"],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* PopoverController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */]])
     ], HomePage);
     return HomePage;
-    var _a, _b, _c, _d, _e, _f, _g, _h, _j;
 }());
 
 //# sourceMappingURL=home.js.map

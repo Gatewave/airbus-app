@@ -21,6 +21,6 @@ export class GalleryDetailsPage {
               private photoViewer: PhotoViewer) {
   }
     openIt(){
-         this.photoViewer.show('./../../assets/imgs/trip_gallery_cover_.jpg');
+         this.photoViewer.show('http://www.airbustours.com:80/new//uploads/banner/20181011142042-2018-10-11banner142041.png');
     }
 }

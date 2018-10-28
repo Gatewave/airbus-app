@@ -3,6 +3,7 @@ import 'rxjs/add/operator/map';
 import { Http } from '@angular/http';
 import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer';
 
+
 @Injectable()
 export class ImagesProvider {
     apiURL = 'http://localhost:3000/';

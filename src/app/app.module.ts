@@ -1,3 +1,4 @@
+// APPLICATION MODULES
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule, } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -7,25 +8,28 @@ import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {AngularFireDatabaseModule} from "angularfire2/database";
 import {AngularFireModule} from 'angularfire2';
 import {AngularFireAuthModule} from 'angularfire2/auth';
+// END APPLICATION MODULES
 
 import { MyApp} from './app.component';
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 
+// APPLICATION PLUGINS
+import { StatusBar } from '@ionic-native/status-bar';
 import {SplashScreen} from "@ionic-native/splash-screen";
 import { CallNumber } from '@ionic-native/call-number';
-import { FileTransfer} from '@ionic-native/file-transfer';
-import { StatusBar } from '@ionic-native/status-bar';
-import { File } from '@ionic-native/file';
 import { Camera } from '@ionic-native/camera';
 import { PhotoViewer } from '@ionic-native/photo-viewer';
+import { File } from '@ionic-native/file';
+import { FileTransfer} from '@ionic-native/file-transfer';
+// END APPLICATION PLUGINS
 
+// APPLICATION PROVIDERS
 import { ImagesProvider } from '../providers/images/images';
 import { LanguageProvider } from '../providers/language/language';
-import { AnimationService, AnimatesDirective } from 'css-animator';
+// END APPLICATION PROVIDERS
 
 // Fire-Base
 import {FIREBASE_CREDENTIALS} from './firebase.credentials';
-
 //End - Fire-Base
 
 
@@ -34,7 +38,6 @@ import {FIREBASE_CREDENTIALS} from './firebase.credentials';
 @NgModule({
     declarations: [
     MyApp,
-    AnimatesDirective,
     ],
 
 
@@ -43,7 +46,6 @@ import {FIREBASE_CREDENTIALS} from './firebase.credentials';
     HttpModule,
     HttpClientModule,
     IonicModule.forRoot(MyApp, {
-    // mode:'ios',
         preloadModules: true,
         platforms: {
             ios: {
@@ -84,30 +86,25 @@ import {FIREBASE_CREDENTIALS} from './firebase.credentials';
       }
     }),
 
-
     ],
     bootstrap: [IonicApp],
-
 
     entryComponents: [
     MyApp,
     ],
 
-
     providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    LanguageProvider,
-    ImagesProvider,
-    AnimationService,
     CallNumber,
     Camera,
-    FileTransfer,
-    SplashScreen,
+    PhotoViewer,
     File,
-    PhotoViewer
+    FileTransfer,
 
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ImagesProvider,
+    LanguageProvider,
     ]
 })
 export class AppModule { }

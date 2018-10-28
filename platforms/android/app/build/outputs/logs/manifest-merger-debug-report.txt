@@ -1,15 +1,15 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:2:1-17:12
-INJECTED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:2:1-17:12
-INJECTED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:2:1-17:12
-INJECTED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:2:1-17:12
+ADDED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
+INJECTED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
+INJECTED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
+INJECTED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
 MERGED from [com.commit451:PhotoView:1.2.4] /home/mondo/.gradle/caches/transforms-1/files-1.1/PhotoView-1.2.4.aar/66da9d80a9b2d4dc401c6873cfa3b62a/AndroidManifest.xml:2:1-12:12
 MERGED from [com.android.support:support-v4:23.0.1] /home/mondo/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/39f171fbe5ea5e2aed1ec3e1b96465e3/AndroidManifest.xml:17:1-24:12
 MERGED from [:CordovaLib] /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:1-27:12
-INJECTED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:2:1-17:12
-INJECTED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:2:1-17:12
-INJECTED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:2:1-17:12
+INJECTED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
+INJECTED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
+INJECTED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
 	package
 		ADDED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:2:102-130
 		INJECTED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml
@@ -108,3 +108,13 @@ uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:16:5-80
 	android:name
 		ADDED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:16:22-77
+uses-permission#android.permission.CALL_PHONE
+ADDED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:17:5-69
+	android:name
+		ADDED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:17:22-66
+uses-feature#android.hardware.telephony
+ADDED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:18:5-88
+	android:required
+		ADDED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:18:61-85
+	android:name
+		ADDED from /home/mondo/Web/Air_bus_mobApp/AirBus/platforms/android/app/src/main/AndroidManifest.xml:18:19-60

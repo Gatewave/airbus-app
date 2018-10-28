@@ -6,6 +6,8 @@ import {storage} from "firebase";
 
 
 
+
+
 @IonicPage()
 @Component({
     selector: 'page-profile',
@@ -14,14 +16,14 @@ import {storage} from "firebase";
 
 
 export class ProfilePage {
+
+
     constructor(public navCtrl: NavController,
                 public navParams: NavParams,
                 private camera:Camera,
-    ) {
+) {
 
     }
-
-
 
     async takePhoto(){
                 try {

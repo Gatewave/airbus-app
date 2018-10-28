@@ -42,6 +42,14 @@ module.exports = [
     ]
   },
   {
+    "id": "cordova-plugin-keyboard.keyboard",
+    "file": "plugins/cordova-plugin-keyboard/www/keyboard.js",
+    "pluginId": "cordova-plugin-keyboard",
+    "clobbers": [
+      "window.Keyboard"
+    ]
+  },
+  {
     "id": "cordova-plugin-splashscreen.SplashScreen",
     "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
     "pluginId": "cordova-plugin-splashscreen",
@@ -56,6 +64,22 @@ module.exports = [
     "clobbers": [
       "window.StatusBar"
     ]
+  },
+  {
+    "id": "mx.ferreyra.callnumber.CallNumber",
+    "file": "plugins/mx.ferreyra.callnumber/www/CallNumber.js",
+    "pluginId": "mx.ferreyra.callnumber",
+    "clobbers": [
+      "call"
+    ]
+  },
+  {
+    "id": "org.apache.cordova.plugin.cache.Cache",
+    "file": "plugins/org.apache.cordova.plugin.cache/www/Cache.js",
+    "pluginId": "org.apache.cordova.plugin.cache",
+    "clobbers": [
+      "cache"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -66,9 +90,12 @@ module.exports.metadata =
   "cordova-plugin-inappbrowser": "3.0.0",
   "cordova-plugin-ionic-keyboard": "2.1.3",
   "cordova-plugin-ionic-webview": "2.2.0",
+  "cordova-plugin-keyboard": "1.2.0",
   "cordova-plugin-splashscreen": "5.0.2",
   "cordova-plugin-statusbar": "2.4.2",
-  "cordova-plugin-whitelist": "1.3.3"
+  "cordova-plugin-whitelist": "1.3.3",
+  "mx.ferreyra.callnumber": "0.0.2",
+  "org.apache.cordova.plugin.cache": "1.0.5"
 };
 // BOTTOM OF METADATA
 });

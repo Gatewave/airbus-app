@@ -4,5 +4,5 @@
       android:versionCode="20001"
       android:versionName="2.0.1"
       split="lib_resources_apk">
-	<uses-sdk android:minSdkVersion="16"/>
+	<uses-sdk android:minSdkVersion="19"/>
 </manifest>
